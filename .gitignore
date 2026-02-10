@@ -50,3 +50,6 @@ DEPLOYMENT.md
 parseQuestions.js
 QUICKSTART.md
 
+# Auto-generated ESLint config
+.eslintrc.json
+
