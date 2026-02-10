@@ -15,8 +15,8 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
 
   if (questions.length === 0) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-8 text-center">
-        <p className="text-gray-600">No questions available for the selected filter.</p>
+      <div className="bg-white rounded-lg shadow-md p-4 md:p-8 text-center">
+        <p className="text-gray-600 text-sm md:text-base">No questions available for the selected filter.</p>
       </div>
     );
   }
@@ -51,21 +51,21 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center text-sm text-gray-600">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs md:text-sm text-gray-600 gap-1 sm:gap-0">
         <span>Question {currentIndex + 1} of {questions.length}</span>
         <span>Topic {current.topic} • Q#{current.questionNumber}</span>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-8">
+      <div className="bg-white rounded-lg shadow-md p-4 md:p-8">
         <div className="mb-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">{current.question}</h2>
+          <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-4">{current.question}</h2>
           
           {!showAnswer && (
             <div className="space-y-3 mt-6">
               {current.options.map((option) => (
                 <div
                   key={option.letter}
-                  className="p-3 border border-gray-200 rounded-md bg-gray-50"
+                  className="p-3 border border-gray-200 rounded-md bg-gray-50 text-sm md:text-base"
                 >
                   <span className="font-medium text-gray-700">{option.letter}.</span> {option.text}
                 </div>
@@ -75,13 +75,13 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
 
           {showAnswer && (
             <div className="mt-6 p-4 bg-green-50 border-2 border-green-500 rounded-md">
-              <p className="font-semibold text-green-800 mb-2">
+              <p className="font-semibold text-green-800 mb-2 text-sm md:text-base">
                 Correct Answer{isMultiAnswer ? 's' : ''}: {current.correctAnswer}
                 {isMultiAnswer && <span className="text-sm font-normal ml-2">(Choose {correctAnswers.length})</span>}
               </p>
               <div className="space-y-2">
                 {correctOptions.map(opt => (
-                  <div key={opt.letter} className="text-gray-700">
+                  <div key={opt.letter} className="text-gray-700 text-sm md:text-base">
                     <span className="font-semibold">{opt.letter}.</span> {opt.text}
                   </div>
                 ))}
@@ -101,18 +101,18 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
           </div>
         )}
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
           {!showAnswer ? (
             <>
               <button
                 onClick={handleKnow}
-                className="flex-1 bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors"
+                className="flex-1 bg-green-600 text-white py-3 md:py-4 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors text-sm md:text-base"
               >
                 I Know This
               </button>
               <button
                 onClick={handleDontKnow}
-                className="flex-1 bg-red-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-red-700 transition-colors"
+                className="flex-1 bg-red-600 text-white py-3 md:py-4 px-6 rounded-md font-semibold hover:bg-red-700 transition-colors text-sm md:text-base"
               >
                 Show Answer
               </button>
@@ -120,7 +120,7 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
           ) : (
             <button
               onClick={handleNext}
-              className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors"
+              className="flex-1 bg-blue-600 text-white py-3 md:py-4 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors text-sm md:text-base"
             >
               Next Question
             </button>
@@ -128,16 +128,16 @@ export default function Flashcard({ questions, progress, onUpdateProgress }: Fla
         </div>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
         <button
           onClick={handlePrevious}
-          className="flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
+          className="flex-1 py-2 md:py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm md:text-base"
         >
           ← Previous
         </button>
         <button
           onClick={handleNext}
-          className="flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
+          className="flex-1 py-2 md:py-3 px-4 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm md:text-base"
         >
           Next →
         </button>
