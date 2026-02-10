@@ -7,6 +7,15 @@ import Progress from './components/Progress';
 import { Question, StudyProgress, StudyMode, QuestionFilter } from './types';
 import questionsData from './data/questions.json';
 
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export default function Home() {
   const [mode, setMode] = useState<StudyMode>('flashcard');
   const [filter, setFilter] = useState<QuestionFilter>('all');
@@ -51,15 +60,6 @@ export default function Home() {
     });
   };
 
-  const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  };
-
   const getFilteredQuestions = (): Question[] => {
     let filtered = [...questions];
 
@@ -73,15 +73,13 @@ export default function Home() {
       filtered = shuffled.slice(0, Math.min(randomCount, shuffled.length));
     }
 
-    if (shuffleQuestions) {
-      filtered = shuffleArray(filtered);
-    }
-
     return filtered;
   };
 
   const startStudy = () => {
-    setFilteredQuestions(getFilteredQuestions());
+    const filtered = getFilteredQuestions();
+    const finalQuestions = shuffleQuestions ? shuffleArray(filtered) : filtered;
+    setFilteredQuestions(finalQuestions);
     setShowSettings(false);
   };
 
