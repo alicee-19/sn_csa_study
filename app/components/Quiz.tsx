@@ -7,9 +7,10 @@ interface QuizProps {
   questions: Question[];
   progress: StudyProgress;
   onUpdateProgress: (questionId: number, isCorrect: boolean) => void;
+  onComplete: () => void;
 }
 
-export default function Quiz({ questions, progress, onUpdateProgress }: QuizProps) {
+export default function Quiz({ questions, progress, onUpdateProgress, onComplete }: QuizProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
   const [showResult, setShowResult] = useState(false);
@@ -17,8 +18,53 @@ export default function Quiz({ questions, progress, onUpdateProgress }: QuizProp
 
   if (questions.length === 0) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-8 text-center">
+      <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 text-center">
         <p className="text-gray-600">No questions available for the selected filter.</p>
+      </div>
+    );
+  }
+
+  const handleRestart = () => {
+    setCurrentIndex(0);
+    setSelectedAnswers([]);
+    setShowResult(false);
+    setScore(0);
+  };
+
+  if (currentIndex >= questions.length) {
+    const percentage = Math.round((score / questions.length) * 100);
+    
+    return (
+      <div className="bg-white rounded-lg shadow-md p-6 sm:p-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Quiz Complete!</h2>
+        <div className="mb-6">
+          <div className="text-5xl sm:text-6xl font-bold text-center my-6 sm:my-8 text-blue-600">
+            {percentage}%
+          </div>
+          <p className="text-lg sm:text-xl text-center text-gray-700 mb-2">
+            You scored {score} out of {questions.length}
+          </p>
+          <div className="w-full bg-gray-200 rounded-full h-4 mt-4">
+            <div
+              className="bg-blue-600 h-4 rounded-full transition-all duration-500"
+              style={{ width: `${percentage}%` }}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <button
+            onClick={handleRestart}
+            className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Restart Quiz
+          </button>
+          <button
+            onClick={onComplete}
+            className="flex-1 border-2 border-gray-300 text-gray-700 py-3 px-6 rounded-md font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Back to Settings
+          </button>
+        </div>
       </div>
     );
   }
@@ -74,55 +120,18 @@ export default function Quiz({ questions, progress, onUpdateProgress }: QuizProp
     setCurrentIndex(currentIndex + 1);
   };
 
-  const handleRestart = () => {
-    setCurrentIndex(0);
-    setSelectedAnswers([]);
-    setShowResult(false);
-    setScore(0);
-  };
-
-  if (currentIndex >= questions.length) {
-    const percentage = Math.round((score / questions.length) * 100);
-    
-    return (
-      <div className="bg-white rounded-lg shadow-md p-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Quiz Complete!</h2>
-        <div className="mb-6">
-          <div className="text-6xl font-bold text-center my-8 text-blue-600">
-            {percentage}%
-          </div>
-          <p className="text-xl text-center text-gray-700 mb-2">
-            You scored {score} out of {questions.length}
-          </p>
-          <div className="w-full bg-gray-200 rounded-full h-4 mt-4">
-            <div
-              className="bg-blue-600 h-4 rounded-full transition-all duration-500"
-              style={{ width: `${percentage}%` }}
-            />
-          </div>
-        </div>
-        <button
-          onClick={handleRestart}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors"
-        >
-          Restart Quiz
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center text-sm text-gray-600">
+      <div className="flex justify-between items-center text-xs sm:text-sm text-gray-600">
         <span>Question {currentIndex + 1} of {questions.length}</span>
         <span>Score: {score}/{questions.length}</span>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-8">
+      <div className="bg-white rounded-lg shadow-md p-4 sm:p-8">
         <div className="mb-6">
-          <div className="flex justify-between items-start mb-4">
-            <h2 className="text-xl font-semibold text-gray-800 flex-1">{current.question}</h2>
-            <span className="text-sm text-gray-500 ml-4">Topic {current.topic}</span>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-4">
+            <h2 className="text-base sm:text-xl font-semibold text-gray-800 flex-1">{current.question}</h2>
+            <span className="text-xs sm:text-sm text-gray-500 sm:ml-4">Topic {current.topic}</span>
           </div>
           
           {isMultiAnswer && !showResult && (
@@ -162,13 +171,13 @@ export default function Quiz({ questions, progress, onUpdateProgress }: QuizProp
                   <div className="flex items-center">
                     <div className="flex items-center mr-3">
                       {isMultiAnswer ? (
-                        <div className={`w-5 h-5 border-2 rounded flex items-center justify-center mr-2 ${
+                                <div className={`w-5 h-5 border-2 rounded flex-shrink-0 flex items-center justify-center mr-2 ${
                           isSelected ? 'bg-blue-500 border-blue-500' : 'border-gray-400'
                         }`}>
                           {isSelected && <span className="text-white text-xs">✓</span>}
                         </div>
                       ) : (
-                        <div className={`w-5 h-5 border-2 rounded-full flex items-center justify-center mr-2 ${
+                        <div className={`w-5 h-5 border-2 rounded-full flex-shrink-0 flex items-center justify-center mr-2 ${
                           isSelected ? 'bg-blue-500 border-blue-500' : 'border-gray-400'
                         }`}>
                           {isSelected && <div className="w-2 h-2 bg-white rounded-full"></div>}

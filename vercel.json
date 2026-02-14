@@ -1,6 +1,0 @@
-{
-  "$schema": "https://json.schemastore.org/vercel",
-  "buildCommand": "npm run build",
-  "outputDirectory": "out",
-  "framework": "nextjs"
-}
