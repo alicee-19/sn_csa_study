@@ -1,0 +1,5400 @@
+[
+  {
+    "id": 400001,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 1,
+    "topic": 1,
+    "question": "Which of the following statements is true for the Form Designer?\na) To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.\nb) To create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.\nc) To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.\nd) To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a, b, c, and d"
+      },
+      {
+        "letter": "B",
+        "text": "b, c, and d"
+      },
+      {
+        "letter": "C",
+        "text": "a, b, and d"
+      },
+      {
+        "letter": "D",
+        "text": "a, b, and c"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400002,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 2,
+    "topic": 1,
+    "question": "Which of the following are configured in an Email Notification?\na) Who will receive the notification.\nb) What content will be in the notification.\nc) When to send the notification.\nd) How to send the notification.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a, b and c"
+      },
+      {
+        "letter": "B",
+        "text": "a, b, and d"
+      },
+      {
+        "letter": "C",
+        "text": "b, c and d"
+      },
+      {
+        "letter": "D",
+        "text": "a, c and d"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400003,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 3,
+    "topic": 1,
+    "question": "To see what scripts, reports, and other application artifacts will be in a published application:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enter the name of the Application in the Global search field"
+      },
+      {
+        "letter": "B",
+        "text": "Open the list of Update Sets for the instance"
+      },
+      {
+        "letter": "C",
+        "text": "Examine the Application Files Related List in the application to be published"
+      },
+      {
+        "letter": "D",
+        "text": "Open the artifact records individually to verify the value in the Application field"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400004,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 4,
+    "topic": 1,
+    "question": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.addInfoMessage()"
+      },
+      {
+        "letter": "B",
+        "text": "Field Watcher"
+      },
+      {
+        "letter": "C",
+        "text": "jslog()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.log()"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400005,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 5,
+    "topic": 1,
+    "question": "Which Application Access configuration field(s) are NOT available if the Can read configuration field is NOT selected?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All access to this table via web services"
+      },
+      {
+        "letter": "B",
+        "text": "Can create, Can update, and Can delete"
+      },
+      {
+        "letter": "C",
+        "text": "Can read does not affect the availability of other Application Access fields"
+      },
+      {
+        "letter": "D",
+        "text": "Allow configuration"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400006,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 6,
+    "topic": 1,
+    "question": "Which of the following is NOT a trigger type in Flow Designer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Outbound Email"
+      },
+      {
+        "letter": "B",
+        "text": "Application"
+      },
+      {
+        "letter": "C",
+        "text": "Record"
+      },
+      {
+        "letter": "D",
+        "text": "Schedule"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400007,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 7,
+    "topic": 1,
+    "question": "When creating new application files in a scoped application, cross scope access is turned on by default in which of the following?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "REST messages"
+      },
+      {
+        "letter": "B",
+        "text": "Table"
+      },
+      {
+        "letter": "C",
+        "text": "Script Include"
+      },
+      {
+        "letter": "D",
+        "text": "Workflow"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400008,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 8,
+    "topic": 1,
+    "question": "In an Email Notification, which one of the following is NOT true for the Weight field?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only Notifications with the highest weight for the same record and recipients are sent"
+      },
+      {
+        "letter": "B",
+        "text": "A Weight value of zero means that no email should be sent"
+      },
+      {
+        "letter": "C",
+        "text": "The Weight value defaults to zero"
+      },
+      {
+        "letter": "D",
+        "text": "A Weight value of zero means the Notification is always sent when the Notification's When to send criteria is met"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400009,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 9,
+    "topic": 1,
+    "question": "Which of the following objects does a Display Business Rule NOT have access to?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "previous"
+      },
+      {
+        "letter": "B",
+        "text": "GlideSystem"
+      },
+      {
+        "letter": "C",
+        "text": "g_scratchpad"
+      },
+      {
+        "letter": "D",
+        "text": "current"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400010,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 10,
+    "topic": 1,
+    "question": "Which of the following features are available to Global applications? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Automated Test Framework"
+      },
+      {
+        "letter": "B",
+        "text": "Source Control"
+      },
+      {
+        "letter": "C",
+        "text": "Delegated Development"
+      },
+      {
+        "letter": "D",
+        "text": "Flow Designer"
+      }
+    ],
+    "correctAnswer": "AD",
+    "suggestedAnswer": "AD"
+  },
+  {
+    "id": 400011,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 11,
+    "topic": 1,
+    "question": "Which one of the following is NOT a UI Action type?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "List choice"
+      },
+      {
+        "letter": "B",
+        "text": "Form button"
+      },
+      {
+        "letter": "C",
+        "text": "List banner button"
+      },
+      {
+        "letter": "D",
+        "text": "Form choice"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400012,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 12,
+    "topic": 1,
+    "question": "Which of the following is NOT supported by Flow Designer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Call a subflow from a flow"
+      },
+      {
+        "letter": "B",
+        "text": "Test a flow with rollback"
+      },
+      {
+        "letter": "C",
+        "text": "Use Delegated Developer"
+      },
+      {
+        "letter": "D",
+        "text": "Run a flow from a MetricBase Trigger"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400013,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 13,
+    "topic": 1,
+    "question": "Which of the following are true for reports in ServiceNow? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Any user can see any report shared with them."
+      },
+      {
+        "letter": "B",
+        "text": "Can be a graphical representation of data."
+      },
+      {
+        "letter": "C",
+        "text": "All users can generate reports on any table."
+      },
+      {
+        "letter": "D",
+        "text": "Can be run on demand by authorized users."
+      },
+      {
+        "letter": "E",
+        "text": "Can be scheduled to be run and distributed by email."
+      }
+    ],
+    "correctAnswer": "BDE",
+    "suggestedAnswer": "BDE"
+  },
+  {
+    "id": 400014,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 14,
+    "topic": 1,
+    "question": "Modules must have a Link type. Which one of the following is a list of Link types?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "List of Records, Separator, Catalog Type, Roles"
+      },
+      {
+        "letter": "B",
+        "text": "Assessment, List of Records, Separator, Timeline Page"
+      },
+      {
+        "letter": "C",
+        "text": "List of Records, Content Page, Order, URL (from arguments:)"
+      },
+      {
+        "letter": "D",
+        "text": "Assessment, List of Records, Content Page, Roles"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400015,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 15,
+    "topic": 1,
+    "question": "Which one of the following is true for a table with the `Allow configuration` Application Access option selected?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only the in scope application's scripts can create Business Rules for the table"
+      },
+      {
+        "letter": "B",
+        "text": "Any user with the application's user role can modify the application's scripts"
+      },
+      {
+        "letter": "C",
+        "text": "Out of scope applications can create Business Rules for the table"
+      },
+      {
+        "letter": "D",
+        "text": "Out of scope applications can add new tables to the scoped application"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400016,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 16,
+    "topic": 1,
+    "question": "When working in the Form Designer, configuring the label of a field in a child table changes the label on which table(s)?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "base table"
+      },
+      {
+        "letter": "B",
+        "text": "child table"
+      },
+      {
+        "letter": "C",
+        "text": "parent table"
+      },
+      {
+        "letter": "D",
+        "text": "all tables"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400017,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 17,
+    "topic": 1,
+    "question": "Which one of the following is true?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A UI Policy's Actions execute before the UI Policy's Scripts"
+      },
+      {
+        "letter": "B",
+        "text": "The execution order for a UI Policy's Scripts and Actions is determined at runtime"
+      },
+      {
+        "letter": "C",
+        "text": "A UI Policy's Scripts execute before the UI Policy's Actions"
+      },
+      {
+        "letter": "D",
+        "text": "A UI Policy's Actions and Scripts execute at the same time"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400018,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 18,
+    "topic": 1,
+    "question": "Here is the Business Rule script template:This type of JavaScript function is known as:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Constructor"
+      },
+      {
+        "letter": "B",
+        "text": "Scoped"
+      },
+      {
+        "letter": "C",
+        "text": "Anonymous"
+      },
+      {
+        "letter": "D",
+        "text": "Self-invoking"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400019,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 19,
+    "topic": 1,
+    "question": "Which method call returns true only if the currently logged in user has the catalog_admin role and in no other case?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_user.hasRole('catalog_admin')"
+      },
+      {
+        "letter": "B",
+        "text": "g_user.hasRoleExactly('catalog_admin')"
+      },
+      {
+        "letter": "C",
+        "text": "g_user.hasRoleOnly('catalog_admin')"
+      },
+      {
+        "letter": "D",
+        "text": "g_user.hasRoleFromList('catalog_admin')"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400020,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 20,
+    "topic": 1,
+    "question": "There is a basic strategy when creating a Utils Script Include. Identify the step that does not belong.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Identify the table"
+      },
+      {
+        "letter": "B",
+        "text": "Script the function(s)"
+      },
+      {
+        "letter": "C",
+        "text": "Create a class"
+      },
+      {
+        "letter": "D",
+        "text": "Create a prototype object from the new class"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400021,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 21,
+    "topic": 1,
+    "question": "Which roles grant access to source control repository operations such as importing applications from source control, or linking an application to source control?(Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "source_control"
+      },
+      {
+        "letter": "B",
+        "text": "source_control_admin"
+      },
+      {
+        "letter": "C",
+        "text": "admin"
+      },
+      {
+        "letter": "D",
+        "text": "git_admin"
+      }
+    ],
+    "correctAnswer": "AC",
+    "suggestedAnswer": "AC"
+  },
+  {
+    "id": 400022,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 22,
+    "topic": 1,
+    "question": "When configuring the content of an Email Notification, which syntax should be used to reference the properties of an event triggering the Notification?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "${event.<property name>}"
+      },
+      {
+        "letter": "B",
+        "text": "${current.<property name>}"
+      },
+      {
+        "letter": "C",
+        "text": "${<property name>.getDisplayValue()}"
+      },
+      {
+        "letter": "D",
+        "text": "${gs.<property name>}"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400023,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 23,
+    "topic": 1,
+    "question": "Which one of the following is true for a Script Include with a Protection Policy value of Protected?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Any user with the protected_edit role can see and edit the Script Include"
+      },
+      {
+        "letter": "B",
+        "text": "The Protection policy option can only be enabled by a user with the admin role"
+      },
+      {
+        "letter": "C",
+        "text": "The Protection Policy is applied only if the glide.app.apply_protection system property value is true"
+      },
+      {
+        "letter": "D",
+        "text": "The Protection Policy is applied only if the application is downloaded from the ServiceNow App Store"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400024,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 24,
+    "topic": 1,
+    "question": "Which one of the following is true for GlideUser (g_user) methods?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Can be used in Client Scripts and UI Policies only"
+      },
+      {
+        "letter": "B",
+        "text": "Can be used in Business Rules only"
+      },
+      {
+        "letter": "C",
+        "text": "Can be used in Client Scripts, UI Policies, and UI Actions"
+      },
+      {
+        "letter": "D",
+        "text": "Can be used in Business Rules, and Scripts Includes"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400025,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 25,
+    "topic": 1,
+    "question": "When configuring a module, what does the Override application menu roles configuration option do?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Users with the module role but without access to the application menu access the module"
+      },
+      {
+        "letter": "B",
+        "text": "Self-Service users can access the module even though they do not have roles"
+      },
+      {
+        "letter": "C",
+        "text": "Admin is given access to the module even if Access Controls would ordinarily prevent access"
+      },
+      {
+        "letter": "D",
+        "text": "Users with access to the application menu can see the module even if they don't have the module role"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400026,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 26,
+    "topic": 1,
+    "question": "Which platform feature can be used to determine the relationships between field in an Import Set table to field in an existing ServiceNow table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Business Service Management Map"
+      },
+      {
+        "letter": "B",
+        "text": "Data Sources"
+      },
+      {
+        "letter": "C",
+        "text": "Transform Map"
+      },
+      {
+        "letter": "D",
+        "text": "CI Relationship Builder"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400027,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 27,
+    "topic": 1,
+    "question": "When configuring a REST Message, the Endpoint is:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The commands to the REST script to stop execution"
+      },
+      {
+        "letter": "B",
+        "text": "The URI of the data to be accessed, queried, or modified"
+      },
+      {
+        "letter": "C",
+        "text": "Information about the format of the returned data"
+      },
+      {
+        "letter": "D",
+        "text": "The response from the provider indicating there is no data to send back"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400028,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 28,
+    "topic": 1,
+    "question": "When evaluating Access Controls, ServiceNow searches and evaluates:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Only for matches on the current table"
+      },
+      {
+        "letter": "B",
+        "text": "Only for matches on the current field"
+      },
+      {
+        "letter": "C",
+        "text": "From the most specific match to the most generic match"
+      },
+      {
+        "letter": "D",
+        "text": "From the most generic match to the most specific match"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400029,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 29,
+    "topic": 1,
+    "question": "In a Business Rule, which one of the following returns true if the currently logged in user has the admin role?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.hasRoleExactly('admin')"
+      },
+      {
+        "letter": "B",
+        "text": "gs.hasRole('admin')"
+      },
+      {
+        "letter": "C",
+        "text": "g_form.hasRole('admin')"
+      },
+      {
+        "letter": "D",
+        "text": "gs.hasRoleExactly('admin')"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400030,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 30,
+    "topic": 1,
+    "question": "From the list below, identify one reason an application might NOT be a good fit with ServiceNow.The application:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Needs workflow to manage processes"
+      },
+      {
+        "letter": "B",
+        "text": "Requires ג€as-isג€ use of low-level programming libraries"
+      },
+      {
+        "letter": "C",
+        "text": "Requires reporting capabilities"
+      },
+      {
+        "letter": "D",
+        "text": "Uses forms extensively to interact with data"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400031,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 31,
+    "topic": 1,
+    "question": "Identify the incorrect statement about Delegated Development in ServiceNow.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Administrators can grant non-admin users the ability to develop global applications."
+      },
+      {
+        "letter": "B",
+        "text": "Administrators can specify which application file types the developer can access."
+      },
+      {
+        "letter": "C",
+        "text": "Administrators can grant the developer access to script fields."
+      },
+      {
+        "letter": "D",
+        "text": "Administrators can grant the developer access to security records."
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400032,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 32,
+    "topic": 1,
+    "question": "One of the uses of the ServiceNow REST API Explorer is:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Practice using REST to interact with public data providers"
+      },
+      {
+        "letter": "B",
+        "text": "Find resources on the web for learning about REST"
+      },
+      {
+        "letter": "C",
+        "text": "Convert SOAP Message functions to REST methods"
+      },
+      {
+        "letter": "D",
+        "text": "Create sample code for sending REST requests to ServiceNow"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400033,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 33,
+    "topic": 1,
+    "question": "Which one of the following is true regarding Application Scope?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All applications are automatically part of the Global scope"
+      },
+      {
+        "letter": "B",
+        "text": "Applications downloaded from 3 party ServiceNow application developers cannot have naming conflicts rd"
+      },
+      {
+        "letter": "C",
+        "text": "Any developer can edit any application"
+      },
+      {
+        "letter": "D",
+        "text": "Developers can choose the prefix for a scope's namespace"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400034,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 34,
+    "topic": 1,
+    "question": "Which one of the following is the baseline behavior of a table in a privately-scoped application?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The table and its data are not accessible using web services"
+      },
+      {
+        "letter": "B",
+        "text": "Any Business Rule can read, write, delete, and update from the table"
+      },
+      {
+        "letter": "C",
+        "text": "Only artifacts in the table's application can read from the table"
+      },
+      {
+        "letter": "D",
+        "text": "All application scopes can read from the table"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400035,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 35,
+    "topic": 1,
+    "question": "Which one of the following is NOT a purpose of application scoping?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Provide a relationship between application artifacts"
+      },
+      {
+        "letter": "B",
+        "text": "Provide a way of tracking the user who developed an application"
+      },
+      {
+        "letter": "C",
+        "text": "Provide a namespace (prefix and scope name) to prevent cross application name collisions"
+      },
+      {
+        "letter": "D",
+        "text": "Provide controls for how scripts from another scope can alter tables in a scoped application"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400036,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 36,
+    "topic": 1,
+    "question": "It is best practice to define the business requirements and the process(es) an application will manage as part of the application development plan. What are some of the considerations to document as part of the business process?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Business problem, data input/output, users/stakeholders, and process steps"
+      },
+      {
+        "letter": "B",
+        "text": "Business problem, data input/output, project schedule, and process steps"
+      },
+      {
+        "letter": "C",
+        "text": "Business problem, data input/output, users/stakeholders, and database capacity"
+      },
+      {
+        "letter": "D",
+        "text": "Business problem, users/stakeholders, available licenses, and database capacity"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400037,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 37,
+    "topic": 1,
+    "question": "Which of the following statements does NOT apply when extending an existing table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The parent table's Access Controls are evaluated when determining access to the new table's records and fields"
+      },
+      {
+        "letter": "B",
+        "text": "The new table inherits the functionality built into the parent table"
+      },
+      {
+        "letter": "C",
+        "text": "The new table inherits all of the fields from the parent table"
+      },
+      {
+        "letter": "D",
+        "text": "You must script and configure all required behaviors"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400038,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 38,
+    "topic": 1,
+    "question": "Which of the following CANNOT be debugged using the Field Watcher?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Business Rules"
+      },
+      {
+        "letter": "B",
+        "text": "Script Includes"
+      },
+      {
+        "letter": "C",
+        "text": "Client Scripts"
+      },
+      {
+        "letter": "D",
+        "text": "Access Controls"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400039,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 39,
+    "topic": 1,
+    "question": "Which objects can be used in Inbound Action scripts?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "current and previous"
+      },
+      {
+        "letter": "B",
+        "text": "current and email"
+      },
+      {
+        "letter": "C",
+        "text": "current and event"
+      },
+      {
+        "letter": "D",
+        "text": "current and producer"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400040,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 40,
+    "topic": 1,
+    "question": "Which one of the following is part of the client-side scripting API?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "workflow.scratchpad"
+      },
+      {
+        "letter": "B",
+        "text": "GlideUser object (g_user)"
+      },
+      {
+        "letter": "C",
+        "text": "current and previous objects"
+      },
+      {
+        "letter": "D",
+        "text": "GlideSystem object (gs)"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400041,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 41,
+    "topic": 1,
+    "question": "Application developers configure ServiceNow using industry standard JavaScript to`¦",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enable the right-click to edit the context menus on applications in the navigator"
+      },
+      {
+        "letter": "B",
+        "text": "Extend and add functionality"
+      },
+      {
+        "letter": "C",
+        "text": "Customize the organization's company logo and banner text"
+      },
+      {
+        "letter": "D",
+        "text": "Configure the outgoing email display name"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400042,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 42,
+    "topic": 1,
+    "question": "How many applications menus can an application have?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3, one for an application's user modules, one for an application's administrator modules, and one for the ServiceNow administrator's modules"
+      },
+      {
+        "letter": "B",
+        "text": "As many as the application design requires"
+      },
+      {
+        "letter": "C",
+        "text": "2, one for an application's user modules and one for an application's administrator modules"
+      },
+      {
+        "letter": "D",
+        "text": "1, which is used for all application modules"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400043,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 43,
+    "topic": 1,
+    "question": "The source control operation used to store local changes on an instance for later application is called a(n) <blank>.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Branch"
+      },
+      {
+        "letter": "B",
+        "text": "Tag"
+      },
+      {
+        "letter": "C",
+        "text": "Stash"
+      },
+      {
+        "letter": "D",
+        "text": "Update set"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400044,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 44,
+    "topic": 1,
+    "question": "What syntax is used in a Record Producer script to access values from Record Producer form fields?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "producer.field_name"
+      },
+      {
+        "letter": "B",
+        "text": "producer.variablename"
+      },
+      {
+        "letter": "C",
+        "text": "current.variable_name"
+      },
+      {
+        "letter": "D",
+        "text": "current.field_name"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400045,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 45,
+    "topic": 1,
+    "question": "Which of the following methods prints a message on a blue background to the top of the current form by default?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.addInfoMsg()"
+      },
+      {
+        "letter": "B",
+        "text": "g_form.addInfoMessage()"
+      },
+      {
+        "letter": "C",
+        "text": "g_form.showFieldMessage()"
+      },
+      {
+        "letter": "D",
+        "text": "g_form.showFieldMsg()"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400046,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 46,
+    "topic": 1,
+    "question": "A scoped application containing Flow Designer content dedicated to a particular application is called a(n):",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Spoke"
+      },
+      {
+        "letter": "B",
+        "text": "Bundle"
+      },
+      {
+        "letter": "C",
+        "text": "Action"
+      },
+      {
+        "letter": "D",
+        "text": "Flow"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400047,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 47,
+    "topic": 1,
+    "question": "What is a Module?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The functionality within an application menu such as opening a page in the content frame or a separate tab or window"
+      },
+      {
+        "letter": "B",
+        "text": "A group of menus, or pages, providing related information and functionality to end-users"
+      },
+      {
+        "letter": "C",
+        "text": "A way of helping users quickly access information and services by filtering the items in the Application Navigator"
+      },
+      {
+        "letter": "D",
+        "text": "A web-based way of providing software to end-users"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400048,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 48,
+    "topic": 1,
+    "question": "Which source control operation is available from BOTH Studio and the Git Repository?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create Branch"
+      },
+      {
+        "letter": "B",
+        "text": "Apply Remote Changes"
+      },
+      {
+        "letter": "C",
+        "text": "Stash Local Changes"
+      },
+      {
+        "letter": "D",
+        "text": "Edit Repository Configurations"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400049,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 49,
+    "topic": 1,
+    "question": "Which one of the following is NOT required to link a ServiceNow application to a Git repository?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Password"
+      },
+      {
+        "letter": "B",
+        "text": "URL"
+      },
+      {
+        "letter": "C",
+        "text": "User name"
+      },
+      {
+        "letter": "D",
+        "text": "Application name"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400050,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 50,
+    "topic": 1,
+    "question": "Which Report Type(s) can be created by right-clicking on a column header in a table's list?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bar Chart, Pie Chart, Histogram, and Line"
+      },
+      {
+        "letter": "B",
+        "text": "Bar Chart"
+      },
+      {
+        "letter": "C",
+        "text": "Bar Chart, Pie Chart, and Histogram"
+      },
+      {
+        "letter": "D",
+        "text": "Bar Chart and Pie Chart"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400051,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 51,
+    "topic": 1,
+    "question": "Which one of the following is NOT a method used for logging messages in a server-side script for a privately-scoped application?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.log()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.error()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.warn()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.debug()"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400052,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 52,
+    "topic": 1,
+    "question": "If the Create module field is selected when creating a table, what is the new module's default behavior?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Open an empty form so new records can be created"
+      },
+      {
+        "letter": "B",
+        "text": "Open a link to a wiki article with instructions on how to customize the behavior of the new module"
+      },
+      {
+        "letter": "C",
+        "text": "Display an empty homepage for the application"
+      },
+      {
+        "letter": "D",
+        "text": "Display a list of all records from the table"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400053,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 53,
+    "topic": 1,
+    "question": "How must Application Access be configured to prevent all other private application scopes from creating configuration records on an application's data tables?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "You must create Access Controls to prevent all other application scopes from creating configuration records on an application's data tables rather than using Application Access"
+      },
+      {
+        "letter": "B",
+        "text": "Set the Accessible from field value to All application scopes and de-select the Can create option"
+      },
+      {
+        "letter": "C",
+        "text": "Set the Accessible from field value to This application scope only and de-select the Allow access to this table via web services option"
+      },
+      {
+        "letter": "D",
+        "text": "Set the Accessible from field value to This application scope only"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400054,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 54,
+    "topic": 1,
+    "question": "What are some of the benefits of extending an existing table such as the Task table when creating a new application?\na) You can repurpose existing fields by simply changing the label.\nb) Use existing fields with no modifications.\nc) Existing logic from the parent table will be automatically applied to the new table.\nd) All of the parent table records are copied to the new table.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a, b, c, and d"
+      },
+      {
+        "letter": "B",
+        "text": "a and b"
+      },
+      {
+        "letter": "C",
+        "text": "b and c"
+      },
+      {
+        "letter": "D",
+        "text": "a, b, and c"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400055,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 55,
+    "topic": 1,
+    "question": "When configuring an Access Control which has no condition or script, which one of the following statements is NOT true?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "table.*will grant access to every field in a record"
+      },
+      {
+        "letter": "B",
+        "text": "table.None will grant access to every record on the table"
+      },
+      {
+        "letter": "C",
+        "text": "table.field will grant access to a specific field in a record"
+      },
+      {
+        "letter": "D",
+        "text": "table.id will grant access to a specific record on the table"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400056,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 56,
+    "topic": 1,
+    "question": "Which of the following methods are useful in Access Control scripts?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_user.hasRole() and current.isNewRecord()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.hasRole() and current.isNewRecord()"
+      },
+      {
+        "letter": "C",
+        "text": "g_user.hasRole() and current.isNew()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.hasRole() and current.isNew()"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400057,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 57,
+    "topic": 1,
+    "question": "Which one of the following client-side scripts apply to Record Producers?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Catalog Client Scripts and Catalog UI Policies"
+      },
+      {
+        "letter": "B",
+        "text": "UI Scripts and UI Actions"
+      },
+      {
+        "letter": "C",
+        "text": "UI Scripts and Record Producer Scripts"
+      },
+      {
+        "letter": "D",
+        "text": "Client Scripts and UI Policies"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400058,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 58,
+    "topic": 1,
+    "question": "When a ServiceNow instance requests information from a web service, ServiceNow is the web service:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publisher"
+      },
+      {
+        "letter": "B",
+        "text": "Specialist"
+      },
+      {
+        "letter": "C",
+        "text": "Provider"
+      },
+      {
+        "letter": "D",
+        "text": "Consumer"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400059,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 59,
+    "topic": 1,
+    "question": "Which one of the following is the fastest way to create and configure a Record Producer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create a Catalog Category, open the category, and select the Add New Record Producer button"
+      },
+      {
+        "letter": "B",
+        "text": "Use the Record Producer module then add and configure all variables manually"
+      },
+      {
+        "letter": "C",
+        "text": "Open the table in the Table records and select the Add to Service Catalog Related Link"
+      },
+      {
+        "letter": "D",
+        "text": "Open the table's form, right-click on the form header, and select the Create Record Producer menu item"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400060,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 60,
+    "topic": 1,
+    "question": "Which objects can you use in a Scheduled Script Execution (Scheduled Job) script?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GlideRecord and current"
+      },
+      {
+        "letter": "B",
+        "text": "GlideUser and GlideRecord"
+      },
+      {
+        "letter": "C",
+        "text": "GlideSystem and GlideRecord"
+      },
+      {
+        "letter": "D",
+        "text": "GlideSystem and current"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400061,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 61,
+    "topic": 1,
+    "question": "Can inherited fields be deleted from a table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes, select the red X in the left-most column in the table definition"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, but only if they are text fields"
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but only if there has never been any saved field data"
+      },
+      {
+        "letter": "D",
+        "text": "No, inherited fields cannot be deleted from a child table"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400062,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 62,
+    "topic": 1,
+    "question": "What is the purpose of the Application Picker?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Select an application to run"
+      },
+      {
+        "letter": "B",
+        "text": "Select an application as a favorite in the Application Navigator"
+      },
+      {
+        "letter": "C",
+        "text": "Choose an application to edit and set the Application Scope"
+      },
+      {
+        "letter": "D",
+        "text": "Choose an application to download and install"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400063,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 63,
+    "topic": 1,
+    "question": "What are Application Files in a ServiceNow application?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An XML export of an application's table records"
+      },
+      {
+        "letter": "B",
+        "text": "CSV files containing data imported into an application"
+      },
+      {
+        "letter": "C",
+        "text": "ServiceNow artifacts comprising an application"
+      },
+      {
+        "letter": "D",
+        "text": "XML exports of an application's Update Set"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400064,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 64,
+    "topic": 1,
+    "question": "Which one of the following is NOT true for Modules?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Modules open content pages"
+      },
+      {
+        "letter": "B",
+        "text": "Access to Modules is controlled with roles"
+      },
+      {
+        "letter": "C",
+        "text": "Every Module must be part of an Application Menu"
+      },
+      {
+        "letter": "D",
+        "text": "Every Module must be associated with a table"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400065,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 65,
+    "topic": 1,
+    "question": "A graphical view of relationships among tables is a <blank>.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Schema map"
+      },
+      {
+        "letter": "B",
+        "text": "Dependency view"
+      },
+      {
+        "letter": "C",
+        "text": "Graphical User Interface"
+      },
+      {
+        "letter": "D",
+        "text": "Map source report"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400066,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 66,
+    "topic": 1,
+    "question": "Which one of the following is true for the Application Picker?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All custom application scope and the Global scope appear in the Application Picker"
+      },
+      {
+        "letter": "B",
+        "text": "All applications in ServiceNow, including baseline applications like Incident, appear in the Application Picker"
+      },
+      {
+        "letter": "C",
+        "text": "Only custom applications appear in the Application Picker"
+      },
+      {
+        "letter": "D",
+        "text": "Only downloaded applications appear in the Application Picker"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400067,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 67,
+    "topic": 1,
+    "question": "When creating an application through the Guided Application Creator, which of the following is a user experience option?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Portal"
+      },
+      {
+        "letter": "B",
+        "text": "Mobile"
+      },
+      {
+        "letter": "C",
+        "text": "Self-service"
+      },
+      {
+        "letter": "D",
+        "text": "Workspace"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400068,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 68,
+    "topic": 1,
+    "question": "When writing a Client Script to provide feedback targeted at a specific field, which method should be used?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.showInfoMessage()"
+      },
+      {
+        "letter": "B",
+        "text": "g_form.showFieldMsg()"
+      },
+      {
+        "letter": "C",
+        "text": "g_form.addInfoMessage()"
+      },
+      {
+        "letter": "D",
+        "text": "g_form.addFieldMsg()"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400069,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 69,
+    "topic": 1,
+    "question": "Which actions can a Business Rule take without scripting?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Set field values and write to the system log"
+      },
+      {
+        "letter": "B",
+        "text": "Set field values and generate an event"
+      },
+      {
+        "letter": "C",
+        "text": "Set field values and add message"
+      },
+      {
+        "letter": "D",
+        "text": "Set field values and query the database"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400070,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 70,
+    "topic": 1,
+    "question": "Which server-side object provides methods for working with dates when writing a script in a privately scoped application?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GlideDateTime"
+      },
+      {
+        "letter": "B",
+        "text": "GlideRecord"
+      },
+      {
+        "letter": "C",
+        "text": "GlideSystem"
+      },
+      {
+        "letter": "D",
+        "text": "current"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400071,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 71,
+    "topic": 1,
+    "question": "Application developers can specify which ServiceNow page a user sees after submitting a new record using the Record Producer UI. How is the page specified?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create an application property to store the URL"
+      },
+      {
+        "letter": "B",
+        "text": "Configure the page in the Module that opens the Record Producer UI"
+      },
+      {
+        "letter": "C",
+        "text": "Write an after Business Rule script for the Record Producer's table: window.redirect = \"<URL>\";"
+      },
+      {
+        "letter": "D",
+        "text": "Write a script in the Record Producer's Script field: producer.redirect = \"<URL>\";"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400072,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 72,
+    "topic": 1,
+    "question": "Identify characteristic(s) of a Record Producer. (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All records created using this strategy are inserted into the Requested Item [sc_req_item] table."
+      },
+      {
+        "letter": "B",
+        "text": "Each field prompts the user with a question rather than a field label."
+      },
+      {
+        "letter": "C",
+        "text": "They must be scripted."
+      },
+      {
+        "letter": "D",
+        "text": "You can script behaviors of fields in the user interface."
+      },
+      {
+        "letter": "E",
+        "text": "Graphics can be included on the user interface."
+      }
+    ],
+    "correctAnswer": "BDE",
+    "suggestedAnswer": "BDE"
+  },
+  {
+    "id": 400073,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 73,
+    "topic": 1,
+    "question": "Which server-side API debug log method is available for scoped applications?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.log()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.info()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.debuglog()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.print()"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400074,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 74,
+    "topic": 1,
+    "question": "Which script types execute on the server? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Business Rule"
+      },
+      {
+        "letter": "B",
+        "text": "Client Scripts"
+      },
+      {
+        "letter": "C",
+        "text": "UI Policies"
+      },
+      {
+        "letter": "D",
+        "text": "Script Actions"
+      },
+      {
+        "letter": "E",
+        "text": "Scheduled Jobs"
+      }
+    ],
+    "correctAnswer": "ADE",
+    "suggestedAnswer": "ADE"
+  },
+  {
+    "id": 400075,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 75,
+    "topic": 1,
+    "question": "What is the best UX format to use for lists and forms?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Forms"
+      },
+      {
+        "letter": "B",
+        "text": "Lists"
+      },
+      {
+        "letter": "C",
+        "text": "Standard"
+      },
+      {
+        "letter": "D",
+        "text": "Classic"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400076,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 76,
+    "topic": 1,
+    "question": "When creating a table in a privately-scoped application, which four Access Controls are created for the table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Insert, Delete, Query, Write"
+      },
+      {
+        "letter": "B",
+        "text": "Create, Delete, Read, Write"
+      },
+      {
+        "letter": "C",
+        "text": "Create, Delete, Read, Update"
+      },
+      {
+        "letter": "D",
+        "text": "Insert, Delete, Query, Update"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400077,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 77,
+    "topic": 1,
+    "question": "Which one of the following is true for this script fragment?g_user.hasRole('x_my_app_user');",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "There is no g_user.hasRole() method"
+      },
+      {
+        "letter": "B",
+        "text": "The method returns false only if the currently logged in user has the x_my_app_user role"
+      },
+      {
+        "letter": "C",
+        "text": "The method returns true only if the currently logged in user has the x_my_app_user role"
+      },
+      {
+        "letter": "D",
+        "text": "The method returns true if the currently logged in user has the x_my_app_user role or the admin role"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400078,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 78,
+    "topic": 1,
+    "question": "Which one of the following database operations cannot be controlled with Application Access?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Query"
+      },
+      {
+        "letter": "B",
+        "text": "Update"
+      },
+      {
+        "letter": "C",
+        "text": "Create"
+      },
+      {
+        "letter": "D",
+        "text": "Delete"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400079,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 79,
+    "topic": 1,
+    "question": "For Application Access there is a configuration option called Allow access to this table via web services. Which one of the following statements is true when this option is selected?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "This option restricts the ability to delete records via web services but records can always be read"
+      },
+      {
+        "letter": "B",
+        "text": "Even when not selected, users with the correct permissions can use web services to access the table's records"
+      },
+      {
+        "letter": "C",
+        "text": "This option restricts access only to SOAP web services but does not apply to REST"
+      },
+      {
+        "letter": "D",
+        "text": "The user performing the query via web services must have the correct permissions to access the table's records"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400080,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 80,
+    "topic": 1,
+    "question": "Which of the following statements must evaluate to true for a user to pass an Access Control? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The user has one of the roles specified in the Required roles related list."
+      },
+      {
+        "letter": "B",
+        "text": "Scripts configured in the Access Control must evaluate to true."
+      },
+      {
+        "letter": "C",
+        "text": "Other matching Access Controls for the records evaluate to true."
+      },
+      {
+        "letter": "D",
+        "text": "Conditions configured in the Access Control must evaluate to true."
+      },
+      {
+        "letter": "E",
+        "text": "The user must be granted access through a business rule."
+      }
+    ],
+    "correctAnswer": "ABD",
+    "suggestedAnswer": "ABD"
+  },
+  {
+    "id": 400081,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 81,
+    "topic": 1,
+    "question": "What is a workflow context?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The table for which a workflow is defined plus any conditions such as \"Active is true\""
+      },
+      {
+        "letter": "B",
+        "text": "It is generated from a workflow version, executes activities, and follows transitions"
+      },
+      {
+        "letter": "C",
+        "text": "The business reason or process for which a workflow is designed"
+      },
+      {
+        "letter": "D",
+        "text": "It is a checked out workflow which is being edited"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400082,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 82,
+    "topic": 1,
+    "question": "Which one of the following is a benefit of creating an Application Properties page for each application you develop?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Application Properties allow a developer to override the application properties inherited from ServiceNow"
+      },
+      {
+        "letter": "B",
+        "text": "An Application Properties page is a good landing page for an application"
+      },
+      {
+        "letter": "C",
+        "text": "Application Properties allow a developer or admin to make changes to an application's behavior without modifying application artifacts"
+      },
+      {
+        "letter": "D",
+        "text": "Application users know to go to the Application Properties page to change the appearance of an application"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400083,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 83,
+    "topic": 1,
+    "question": "Which one of the following is NOT an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The application needs to send weekly email reminders to requestors for all records on a table"
+      },
+      {
+        "letter": "B",
+        "text": "The application needs to run a clean up script on the last day of every month"
+      },
+      {
+        "letter": "C",
+        "text": "The application needs to query the database every day to look for unassigned records"
+      },
+      {
+        "letter": "D",
+        "text": "The application needs to run a client-side script at the same time every day"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400084,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 84,
+    "topic": 1,
+    "question": "Which one of the following objects CANNOT be used in a Script Action script?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "previous"
+      },
+      {
+        "letter": "B",
+        "text": "GlideRecord"
+      },
+      {
+        "letter": "C",
+        "text": "event"
+      },
+      {
+        "letter": "D",
+        "text": "current"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400085,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 85,
+    "topic": 1,
+    "question": "How does ServiceNow match inbound email to existing records?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Watermark"
+      },
+      {
+        "letter": "B",
+        "text": "Record link"
+      },
+      {
+        "letter": "C",
+        "text": "Subject line"
+      },
+      {
+        "letter": "D",
+        "text": "sys_id"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400086,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 86,
+    "topic": 1,
+    "question": "When debugging Email Notifications, what must you check on a user record? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Active must be true."
+      },
+      {
+        "letter": "B",
+        "text": "The First name and Last name fields must have values."
+      },
+      {
+        "letter": "C",
+        "text": "The value in the Notification field must be set to enabled."
+      },
+      {
+        "letter": "D",
+        "text": "The user must not be locked out."
+      },
+      {
+        "letter": "E",
+        "text": "The Email field must have a value."
+      }
+    ],
+    "correctAnswer": "ACE",
+    "suggestedAnswer": "ACE"
+  },
+  {
+    "id": 400087,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 87,
+    "topic": 1,
+    "question": "What are web services?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Methods used to create and maintain UI Pages"
+      },
+      {
+        "letter": "B",
+        "text": "Methods used to allow applications to connect to other software applications over a network"
+      },
+      {
+        "letter": "C",
+        "text": "Methods used to discover a wide variety of systems and applications"
+      },
+      {
+        "letter": "D",
+        "text": "They provide a customer-facing view of available service and product offerings provided by departments within the organization"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400088,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 88,
+    "topic": 1,
+    "question": "Which of the following methods is NOT part of the ServiceNow REST API?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "COPY"
+      },
+      {
+        "letter": "B",
+        "text": "GET"
+      },
+      {
+        "letter": "C",
+        "text": "DELETE"
+      },
+      {
+        "letter": "D",
+        "text": "POST"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400089,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 89,
+    "topic": 1,
+    "question": "You are developing the MyApp application that has a table, Table A. When the MyApp application is installed on an instance, you want Table A's records to be installed as part of the application.Table A's records will be installed when:",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Table A is active and extends the Task table"
+      },
+      {
+        "letter": "B",
+        "text": "Table A's records are added to the application record using the Create Application Files context menu item"
+      },
+      {
+        "letter": "C",
+        "text": "Table A has an automatic number counter for new records"
+      },
+      {
+        "letter": "D",
+        "text": "Table A is not included in the System Clone > Exclude Tables list"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400090,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 90,
+    "topic": 1,
+    "question": "How can an application link to a repository behind a firewall?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "This option is not supported."
+      },
+      {
+        "letter": "B",
+        "text": "Link an application to source control through a MID Server."
+      },
+      {
+        "letter": "C",
+        "text": "Link an application to source control through an access token."
+      },
+      {
+        "letter": "D",
+        "text": "Link an application to source control with multi-factor authentication."
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400091,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 91,
+    "topic": 1,
+    "question": "What is the ServiceNow store?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Downloadable content ServiceNow script archive"
+      },
+      {
+        "letter": "B",
+        "text": "Alternate name for the ServiceNow Developer Share site"
+      },
+      {
+        "letter": "C",
+        "text": "The source for ServiceNow Community created developer content"
+      },
+      {
+        "letter": "D",
+        "text": "Marketplace for free and paid certified ServiceNow applications and integrations"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400092,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 92,
+    "topic": 1,
+    "question": "Tables that extend a table do what?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Automatically update the application scope"
+      },
+      {
+        "letter": "B",
+        "text": "Do not inherit the parent’s fields"
+      },
+      {
+        "letter": "C",
+        "text": "Sometimes inherit the parent’s fields"
+      },
+      {
+        "letter": "D",
+        "text": "Inherit the parent’s fields"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400093,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 93,
+    "topic": 1,
+    "question": "When creating an application through the Guided Application Creator, which of the following is NOT an option for creating a table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create table from template"
+      },
+      {
+        "letter": "B",
+        "text": "Create table from scratch"
+      },
+      {
+        "letter": "C",
+        "text": "Extend a table"
+      },
+      {
+        "letter": "D",
+        "text": "Upload spreadsheet"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400094,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 94,
+    "topic": 1,
+    "question": "Server-side scripts manage what?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Database and backend"
+      },
+      {
+        "letter": "B",
+        "text": "Playbook access"
+      },
+      {
+        "letter": "C",
+        "text": "User access"
+      },
+      {
+        "letter": "D",
+        "text": "Forms and Fields"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400095,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 95,
+    "topic": 1,
+    "question": "What intuitive development interface guides users through the initial application development process?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Guided Tour Designer"
+      },
+      {
+        "letter": "B",
+        "text": "Guided Application Creator"
+      },
+      {
+        "letter": "C",
+        "text": "ServiceNow Studio"
+      },
+      {
+        "letter": "D",
+        "text": "Flow Designer"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400096,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 96,
+    "topic": 1,
+    "question": "What are some benefits of developing private, scoped applications? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To avoid using a code repository like GitHub or GitLab"
+      },
+      {
+        "letter": "B",
+        "text": "To reduce risk at code collisions"
+      },
+      {
+        "letter": "C",
+        "text": "To enable installation and uninstallation of an application"
+      },
+      {
+        "letter": "D",
+        "text": "To replicate ServiceNow functions a private scope"
+      }
+    ],
+    "correctAnswer": "BC",
+    "suggestedAnswer": "BC"
+  },
+  {
+    "id": 400097,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 97,
+    "topic": 1,
+    "question": "Which of the following statements is NOT true for the Form Designer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form."
+      },
+      {
+        "letter": "B",
+        "text": "To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form."
+      },
+      {
+        "letter": "C",
+        "text": "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button."
+      },
+      {
+        "letter": "D",
+        "text": "To create a new field on a form’s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field."
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400098,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 98,
+    "topic": 1,
+    "question": "What records are used to track cross-scope applications or scripts that request access to an application, application resource, or event?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Restricted caller access records"
+      },
+      {
+        "letter": "B",
+        "text": "Caller tracking records"
+      },
+      {
+        "letter": "C",
+        "text": "Access control level records"
+      },
+      {
+        "letter": "D",
+        "text": "Cross-scope access records"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400099,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 99,
+    "topic": 1,
+    "question": "Which ATF Test step allows you to create a user with speeded roles and groups for the test?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create a group"
+      },
+      {
+        "letter": "B",
+        "text": "Impersonation"
+      },
+      {
+        "letter": "C",
+        "text": "Create a user"
+      },
+      {
+        "letter": "D",
+        "text": "Create a role"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400100,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 100,
+    "topic": 1,
+    "question": "What plugin enables the Guided Application Creator?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "com.glide.sn-guided-app-creator"
+      },
+      {
+        "letter": "B",
+        "text": "com.glide.service_creator"
+      },
+      {
+        "letter": "C",
+        "text": "com.glide.snc.apps_creator"
+      },
+      {
+        "letter": "D",
+        "text": "com.snc.apps_creator_template"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400101,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 101,
+    "topic": 1,
+    "question": "Which of the following can be an external data source for a ServiceNow application?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Microsoft Excel File"
+      },
+      {
+        "letter": "B",
+        "text": "Data provided by a public web service using SOAP or REST"
+      },
+      {
+        "letter": "C",
+        "text": "CSV file"
+      },
+      {
+        "letter": "D",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400102,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 102,
+    "topic": 1,
+    "question": "Which one of the following is true for the Application Picker and Application Scope?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Global is a reserved application which does not appear in the Application Picker"
+      },
+      {
+        "letter": "B",
+        "text": "Selecting an application from the Application Picker does not set the Application Scope"
+      },
+      {
+        "letter": "C",
+        "text": "Selecting an application from the Application Picker sets the Application Scope"
+      },
+      {
+        "letter": "D",
+        "text": "Selecting Global in the Application Picker sets the Application Scope to Incident"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400103,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 103,
+    "topic": 1,
+    "question": "Which of the following is an available feature in Studio? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Push to update set"
+      },
+      {
+        "letter": "B",
+        "text": "Merge branches"
+      },
+      {
+        "letter": "C",
+        "text": "Search code"
+      },
+      {
+        "letter": "D",
+        "text": "Push to external source control"
+      }
+    ],
+    "correctAnswer": "CD",
+    "suggestedAnswer": "CD"
+  },
+  {
+    "id": 400104,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 104,
+    "topic": 1,
+    "question": "The Task table is an example of which of the following? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Parent class"
+      },
+      {
+        "letter": "B",
+        "text": "Legacy class"
+      },
+      {
+        "letter": "C",
+        "text": "Child class"
+      },
+      {
+        "letter": "D",
+        "text": "Base class"
+      }
+    ],
+    "correctAnswer": "AD",
+    "suggestedAnswer": "AD"
+  },
+  {
+    "id": 400105,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 105,
+    "topic": 1,
+    "question": "Which of the following is true about deleting fields from a table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Table records are deleted when a field is deleted"
+      },
+      {
+        "letter": "B",
+        "text": "User-defined non-inherited fields can be deleted"
+      },
+      {
+        "letter": "C",
+        "text": "Any field on a table can be deleted"
+      },
+      {
+        "letter": "D",
+        "text": "Inherited fields can be deleted"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400106,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 106,
+    "topic": 1,
+    "question": "Why would you build a custom app? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To avoid using a code repository like GitHub or GitLab"
+      },
+      {
+        "letter": "B",
+        "text": "To replace ServiceNow base tables"
+      },
+      {
+        "letter": "C",
+        "text": "To fulfill a specific use case on internal processes"
+      },
+      {
+        "letter": "D",
+        "text": "To create a custom integration for a 3rd party system"
+      }
+    ],
+    "correctAnswer": "CD",
+    "suggestedAnswer": "CD"
+  },
+  {
+    "id": 400107,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 107,
+    "topic": 1,
+    "question": "What are three ServiceNow table creation methods? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using legacy Workflows"
+      },
+      {
+        "letter": "B",
+        "text": "Upload and turn a spreadsheet into a custom table"
+      },
+      {
+        "letter": "C",
+        "text": "Using Flow Designer"
+      },
+      {
+        "letter": "D",
+        "text": "Use the Now Experience Table Creator"
+      },
+      {
+        "letter": "E",
+        "text": "Extend a table"
+      },
+      {
+        "letter": "F",
+        "text": "Create a custom table"
+      }
+    ],
+    "correctAnswer": "BEF",
+    "suggestedAnswer": "BEF"
+  },
+  {
+    "id": 400108,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 108,
+    "topic": 1,
+    "question": "When selecting a data type for a field that will be displayed on a form, which of the following statements is NOT correct?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use the String data type tor a free-form text field"
+      },
+      {
+        "letter": "B",
+        "text": "Use the Phone Number data type to automate phone number data validation"
+      },
+      {
+        "letter": "C",
+        "text": "Use the Choice data type to limit options in a field"
+      },
+      {
+        "letter": "D",
+        "text": "Use the Date data type to enter the date and time of day"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400109,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 109,
+    "topic": 1,
+    "question": "Which one of the following is NOT part of the Form Designer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Page header"
+      },
+      {
+        "letter": "B",
+        "text": "Schema map"
+      },
+      {
+        "letter": "C",
+        "text": "Field navigator"
+      },
+      {
+        "letter": "D",
+        "text": "Form layout"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400110,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 110,
+    "topic": 1,
+    "question": "Which class is NOT part of the Client side scoped APIs?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GlideDialogWindow"
+      },
+      {
+        "letter": "B",
+        "text": "GlideAjax"
+      },
+      {
+        "letter": "C",
+        "text": "GlideRecord"
+      },
+      {
+        "letter": "D",
+        "text": "GlideForm"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400111,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 111,
+    "topic": 1,
+    "question": "When designing and creating a form what do you create to organize fields on a form?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Buttons"
+      },
+      {
+        "letter": "B",
+        "text": "Tabs"
+      },
+      {
+        "letter": "C",
+        "text": "Sections"
+      },
+      {
+        "letter": "D",
+        "text": "Related lists"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400112,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 112,
+    "topic": 1,
+    "question": "Which one of the following is a good practice for adding instructions to a form?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Related links to wiki pages"
+      },
+      {
+        "letter": "B",
+        "text": "A Context Menu UI Action"
+      },
+      {
+        "letter": "C",
+        "text": "Annotations"
+      },
+      {
+        "letter": "D",
+        "text": "A populated read-only field"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400113,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 113,
+    "topic": 1,
+    "question": "Which of the following GlideRecord methods run a query against a database table? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "_get()"
+      },
+      {
+        "letter": "B",
+        "text": "runQuery()"
+      },
+      {
+        "letter": "C",
+        "text": "query()"
+      },
+      {
+        "letter": "D",
+        "text": "_query()"
+      },
+      {
+        "letter": "E",
+        "text": "get("
+      }
+    ],
+    "correctAnswer": "CDE",
+    "suggestedAnswer": "CDE"
+  },
+  {
+    "id": 400114,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 114,
+    "topic": 1,
+    "question": "What is the GlideForm Client-side scripting object?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "sn.form"
+      },
+      {
+        "letter": "B",
+        "text": "g_form"
+      },
+      {
+        "letter": "C",
+        "text": "gs.form"
+      },
+      {
+        "letter": "D",
+        "text": "gs_form"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400115,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 115,
+    "topic": 1,
+    "question": "In a Business Rule, which one of the following returns the sys_id of the currently logged in user?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.getUserID()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.getUserSysID()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.getUserID()"
+      },
+      {
+        "letter": "D",
+        "text": "g_form.getUserSysID()"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400116,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 116,
+    "topic": 1,
+    "question": "Access Control debug information identifies whether each element of an Access Control granted or denied access. The elements appear in the debug information in the order of evaluation. In which order are the elements of an Access Control evaluated?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Conditions, Roles, Script"
+      },
+      {
+        "letter": "B",
+        "text": "Conditions, Script, Roles"
+      },
+      {
+        "letter": "C",
+        "text": "Roles, Conditions, Script"
+      },
+      {
+        "letter": "D",
+        "text": "Script, Conditions, Roles"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400117,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 117,
+    "topic": 1,
+    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:Which field or fields can a user with the itil role read?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All fields except field3"
+      },
+      {
+        "letter": "B",
+        "text": "field1, field2, and field3"
+      },
+      {
+        "letter": "C",
+        "text": "field1 and field3"
+      },
+      {
+        "letter": "D",
+        "text": "field3 only"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400118,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 118,
+    "topic": 1,
+    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:Which field or fields can a user with the itil role read?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "field3 only"
+      },
+      {
+        "letter": "B",
+        "text": "filed1 and field3"
+      },
+      {
+        "letter": "C",
+        "text": "All fields"
+      },
+      {
+        "letter": "D",
+        "text": "All fields except field3"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400119,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 119,
+    "topic": 1,
+    "question": "Which of the following is NOT a caller access field option?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Caller Tracking"
+      },
+      {
+        "letter": "B",
+        "text": "Caller Restriction"
+      },
+      {
+        "letter": "C",
+        "text": "None"
+      },
+      {
+        "letter": "D",
+        "text": "Caller Permission"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400120,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 120,
+    "topic": 1,
+    "question": "Which method is used to retrieve Application Property values in a script?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.getProperty()"
+      },
+      {
+        "letter": "B",
+        "text": "g_form.getAppProperty()"
+      },
+      {
+        "letter": "C",
+        "text": "g_form.getProperty()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.getAppProperty()"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400121,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 121,
+    "topic": 1,
+    "question": "What Module Link type is used to access an Application Properties page?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Single Record"
+      },
+      {
+        "letter": "B",
+        "text": "HTML (from Arguments)"
+      },
+      {
+        "letter": "C",
+        "text": "URL (from Arguments)"
+      },
+      {
+        "letter": "D",
+        "text": "Script (from Arguments)"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400122,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 122,
+    "topic": 1,
+    "question": "Identify the way(s) an application can respond to an Event generated by the gs.eventQueue() method.a. Script Actionb. Scheduled Script Execution (Scheduled Job)c. UI Policyd. Email Notification",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "b and c"
+      },
+      {
+        "letter": "B",
+        "text": "c"
+      },
+      {
+        "letter": "C",
+        "text": "a and d"
+      },
+      {
+        "letter": "D",
+        "text": "a and c"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400123,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 123,
+    "topic": 1,
+    "question": "When troubleshooting and debugging notifications, where do you navigate to see if an email was sent m response to an event?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "System Logs > Events"
+      },
+      {
+        "letter": "B",
+        "text": "System Logs > Emails"
+      },
+      {
+        "letter": "C",
+        "text": "System Logs > Push Notifications"
+      },
+      {
+        "letter": "D",
+        "text": "System Logs > ICE Logs"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400124,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 124,
+    "topic": 1,
+    "question": "What are the benefits of storing the majority of an Application’s server-side script logic in a Script Include?a. This makes execution faster.b. Only run when called from a script.c. The script logic can be hidden when the Application is installed from the ServiceNow Store. d. For some changes to application logic there is only one place to make edits.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a, b, and d"
+      },
+      {
+        "letter": "B",
+        "text": "a, b, c, and d"
+      },
+      {
+        "letter": "C",
+        "text": "b, c, and d"
+      },
+      {
+        "letter": "D",
+        "text": "a, b, and c"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400125,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 125,
+    "topic": 1,
+    "question": "Which of the following is NOT a Flow Designer feature?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Run a flow from a Catalog item"
+      },
+      {
+        "letter": "B",
+        "text": "Call a flow from another flow or subflow"
+      },
+      {
+        "letter": "C",
+        "text": "Add stages to a flow"
+      },
+      {
+        "letter": "D",
+        "text": "Test a flow using the “Run as” feature"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400126,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 126,
+    "topic": 1,
+    "question": "What is the purpose of the coalesce field when importing data?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "If a match is not found, the existing record is updated"
+      },
+      {
+        "letter": "B",
+        "text": "To determine if a record matches an existing record or is a new record"
+      },
+      {
+        "letter": "C",
+        "text": "To identify and merge duplicate records"
+      },
+      {
+        "letter": "D",
+        "text": "When a match is found, a new record is inserted"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400127,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 127,
+    "topic": 1,
+    "question": "If you create a SOAP Message what syntax indicates a variable to pass when the function is called?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "current.variable_name"
+      },
+      {
+        "letter": "B",
+        "text": "${variable_name}"
+      },
+      {
+        "letter": "C",
+        "text": "< variable_name >.do?WSDL"
+      },
+      {
+        "letter": "D",
+        "text": "< variable_name >"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400128,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 128,
+    "topic": 1,
+    "question": "Which of the following is NOT a way to install an application on a ServiceNow instance?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Install an application from the Application Repository"
+      },
+      {
+        "letter": "B",
+        "text": "Select the Copy button on the application record"
+      },
+      {
+        "letter": "C",
+        "text": "Download and install an application from the ServiceNow Share web site"
+      },
+      {
+        "letter": "D",
+        "text": "Download and install a third-party application from the ServiceNow Store"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400129,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 129,
+    "topic": 1,
+    "question": "Using Custom UI test step in Automated Test Framework, which of the following is NOT a testable page component?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Buttons"
+      },
+      {
+        "letter": "B",
+        "text": "UI controls"
+      },
+      {
+        "letter": "C",
+        "text": "UI pages"
+      },
+      {
+        "letter": "D",
+        "text": "Form field values"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400130,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 130,
+    "topic": 1,
+    "question": "Why create Applications in ServiceNow?a) To replace outdated, inadequate, custom business applications and processes\nb) To extend service delivery and management to all enterprise departments\nc) To allow users full access to all ServiceNow tables, records, and fields\nd) To extend the value of ServiceNow",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a, b, and d"
+      },
+      {
+        "letter": "B",
+        "text": "a, b, c, and d"
+      },
+      {
+        "letter": "C",
+        "text": "a, b, and c"
+      },
+      {
+        "letter": "D",
+        "text": "b, c, and d"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400131,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 131,
+    "topic": 1,
+    "question": "Flow Designer supports variable data types to store record data and complex data. Which of the following are supported variable data types? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Choice data type"
+      },
+      {
+        "letter": "B",
+        "text": "Array.Reference data type"
+      },
+      {
+        "letter": "C",
+        "text": "Integer data type"
+      },
+      {
+        "letter": "D",
+        "text": "Freedom data type"
+      },
+      {
+        "letter": "E",
+        "text": "Array.Boolean data type"
+      },
+      {
+        "letter": "F",
+        "text": "Label data type"
+      }
+    ],
+    "correctAnswer": "ACE",
+    "suggestedAnswer": "ACE"
+  },
+  {
+    "id": 400132,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 132,
+    "topic": 1,
+    "question": "Which of the following statements is true about Guided Application Creator?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The global scope option is turned on by default"
+      },
+      {
+        "letter": "B",
+        "text": "Default access controls are automatically created"
+      },
+      {
+        "letter": "C",
+        "text": "The welcome screen appears every time a new application is created"
+      },
+      {
+        "letter": "D",
+        "text": "A scoped application user role is automatically created"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400133,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 133,
+    "topic": 1,
+    "question": "What are the ways to designate data tables when using Guided Application Creator (GAC)? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Upload an existing PDF"
+      },
+      {
+        "letter": "B",
+        "text": "Create a new table on the platform"
+      },
+      {
+        "letter": "C",
+        "text": "Use a freeform database"
+      },
+      {
+        "letter": "D",
+        "text": "Upload an existing spreadsheet"
+      },
+      {
+        "letter": "E",
+        "text": "Use an existing table on the platform"
+      },
+      {
+        "letter": "F",
+        "text": "Upload an existing word processing document"
+      }
+    ],
+    "correctAnswer": "BDE",
+    "suggestedAnswer": "BDE"
+  },
+  {
+    "id": 400134,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 134,
+    "topic": 1,
+    "question": "What is the Event Registry?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A Workflow which is launched every time an Event is generated; used to debug Events"
+      },
+      {
+        "letter": "B",
+        "text": "The Event Log which lists all Events that have been generated"
+      },
+      {
+        "letter": "C",
+        "text": "The method used in server side scripts to generate Events and pass parameters"
+      },
+      {
+        "letter": "D",
+        "text": "A table containing a record for every Event known to the ServiceNow system which allows ServiceNow to react when Events are generated"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400135,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 135,
+    "topic": 1,
+    "question": "Identify the ways an application can respond to an Event generated by the gs.eventQueue() method: (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Client Script"
+      },
+      {
+        "letter": "B",
+        "text": "Email Notification"
+      },
+      {
+        "letter": "C",
+        "text": "Scheduled Script Execution (Scheduled Job)"
+      },
+      {
+        "letter": "D",
+        "text": "Script Action"
+      },
+      {
+        "letter": "E",
+        "text": "UI Policy"
+      }
+    ],
+    "correctAnswer": "BD",
+    "suggestedAnswer": "BD"
+  },
+  {
+    "id": 400136,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 136,
+    "topic": 1,
+    "question": "Is it possible to change an application’s scope?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No, it’s not possible"
+      },
+      {
+        "letter": "B",
+        "text": "Yes, it’s possible"
+      },
+      {
+        "letter": "C",
+        "text": "Yes, but only from global scope to private scope"
+      },
+      {
+        "letter": "D",
+        "text": "Yes, but only from private scope to global scope"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400137,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 137,
+    "topic": 1,
+    "question": "Which of the following is true about g_scratchpad? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Used to push information from the server to the client"
+      },
+      {
+        "letter": "B",
+        "text": "Does not exist on the mobile platform"
+      },
+      {
+        "letter": "C",
+        "text": "Has constructors and methods"
+      },
+      {
+        "letter": "D",
+        "text": "Has default properties passed by client-side scripts"
+      }
+    ],
+    "correctAnswer": "AB",
+    "suggestedAnswer": "AB"
+  },
+  {
+    "id": 400138,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 138,
+    "topic": 1,
+    "question": "Client-side scripts manage what?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "User access"
+      },
+      {
+        "letter": "B",
+        "text": "Database and backend"
+      },
+      {
+        "letter": "C",
+        "text": "Playbook access"
+      },
+      {
+        "letter": "D",
+        "text": "Forms and Form Fields"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400139,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 139,
+    "topic": 1,
+    "question": "When debugging Email Notifications, what must you check on a user record? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Active must be true."
+      },
+      {
+        "letter": "B",
+        "text": "The Email field must have a valid value."
+      },
+      {
+        "letter": "C",
+        "text": "The user must not be locked out."
+      },
+      {
+        "letter": "D",
+        "text": "The First name and Last name fields must have values."
+      },
+      {
+        "letter": "E",
+        "text": "Delegation must be enabled."
+      }
+    ],
+    "correctAnswer": "AB",
+    "suggestedAnswer": "AB"
+  },
+  {
+    "id": 400140,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 140,
+    "topic": 1,
+    "question": "When crafting a scoped application that contains flow actions, what is the application called?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Action"
+      },
+      {
+        "letter": "B",
+        "text": "Spoke"
+      },
+      {
+        "letter": "C",
+        "text": "Bundle"
+      },
+      {
+        "letter": "D",
+        "text": "Flow"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400141,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 141,
+    "topic": 1,
+    "question": "Which are reasons an application could be developed on the ServiceNow platform? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It needs workflow to manage processes."
+      },
+      {
+        "letter": "B",
+        "text": "It requires reporting capabilities."
+      },
+      {
+        "letter": "C",
+        "text": "It uses forms extensively to interact with data."
+      },
+      {
+        "letter": "D",
+        "text": "It requires low-level programming libraries."
+      },
+      {
+        "letter": "E",
+        "text": "It uses multimedia features."
+      }
+    ],
+    "correctAnswer": "ABC",
+    "suggestedAnswer": "ABC"
+  },
+  {
+    "id": 400142,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 142,
+    "topic": 1,
+    "question": "Once an application is ready to share, which of the following methods of publishing are supported by ServiceNow? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Publish to an application repository"
+      },
+      {
+        "letter": "B",
+        "text": "Publish to a local drive"
+      },
+      {
+        "letter": "C",
+        "text": "Publish to the ServiceNow Store"
+      },
+      {
+        "letter": "D",
+        "text": "Publish to an Update Set"
+      },
+      {
+        "letter": "E",
+        "text": "Publish to a spreadsheet"
+      },
+      {
+        "letter": "F",
+        "text": "Publish to a local USB device"
+      }
+    ],
+    "correctAnswer": "ACD",
+    "suggestedAnswer": "ACD"
+  },
+  {
+    "id": 400143,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 143,
+    "topic": 1,
+    "question": "What is required to link a ServiceNow application to a Git repository? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "URI"
+      },
+      {
+        "letter": "B",
+        "text": "ACL"
+      },
+      {
+        "letter": "C",
+        "text": "Application name"
+      },
+      {
+        "letter": "D",
+        "text": "Password"
+      },
+      {
+        "letter": "E",
+        "text": "User name"
+      },
+      {
+        "letter": "F",
+        "text": "URL"
+      }
+    ],
+    "correctAnswer": "DEF",
+    "suggestedAnswer": "DEF"
+  },
+  {
+    "id": 400146,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 146,
+    "topic": 1,
+    "question": "Which business requirements and process(es) should be documented as part of the application development plan? (Choose four.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Available licenses"
+      },
+      {
+        "letter": "B",
+        "text": "Business problem"
+      },
+      {
+        "letter": "C",
+        "text": "Process steps"
+      },
+      {
+        "letter": "D",
+        "text": "Users/stakeholders"
+      },
+      {
+        "letter": "E",
+        "text": "Database capacity"
+      },
+      {
+        "letter": "F",
+        "text": "Project schedule"
+      },
+      {
+        "letter": "G",
+        "text": "Data input/output"
+      }
+    ],
+    "correctAnswer": "BCDG",
+    "suggestedAnswer": "BCDG"
+  },
+  {
+    "id": 400148,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 148,
+    "topic": 1,
+    "question": "When creating application tables, a user role is automatically added to the table record. Which other role does an application typically have?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Application Super User"
+      },
+      {
+        "letter": "B",
+        "text": "Application Fulfiller"
+      },
+      {
+        "letter": "C",
+        "text": "Application Admin"
+      },
+      {
+        "letter": "D",
+        "text": "Application Manager"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400150,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 150,
+    "topic": 1,
+    "question": "What data types of Flow Designer variables are supported to store record data and complex data? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Label data type"
+      },
+      {
+        "letter": "B",
+        "text": "Integer"
+      },
+      {
+        "letter": "C",
+        "text": "Array.Reference"
+      },
+      {
+        "letter": "D",
+        "text": "Choice"
+      },
+      {
+        "letter": "E",
+        "text": "String"
+      }
+    ],
+    "correctAnswer": "BDE",
+    "suggestedAnswer": "BDE"
+  },
+  {
+    "id": 400151,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 151,
+    "topic": 1,
+    "question": "What are the features of Flow Designer? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Add stages to a flow."
+      },
+      {
+        "letter": "B",
+        "text": "Call a flow from another flow or subflow."
+      },
+      {
+        "letter": "C",
+        "text": "Test a flow using the “Run as” feature."
+      },
+      {
+        "letter": "D",
+        "text": "Support Java Scripting code to test conditions that trigger the flow."
+      },
+      {
+        "letter": "E",
+        "text": "Run a flow from a Catalog item."
+      },
+      {
+        "letter": "F",
+        "text": "Perform form field data validation at client side."
+      }
+    ],
+    "correctAnswer": "ACE",
+    "suggestedAnswer": "ACE"
+  },
+  {
+    "id": 400152,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 152,
+    "topic": 1,
+    "question": "How is access to Application Menus and Modules controlled?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Access Control"
+      },
+      {
+        "letter": "B",
+        "text": "Client Scripts"
+      },
+      {
+        "letter": "C",
+        "text": "Roles"
+      },
+      {
+        "letter": "D",
+        "text": "Application Rules"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400153,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 153,
+    "topic": 1,
+    "question": "What is the ServiceNow App Repository?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A Request table"
+      },
+      {
+        "letter": "B",
+        "text": "A database containing ServiceNow apps"
+      },
+      {
+        "letter": "C",
+        "text": "A collection of files in a Git database"
+      },
+      {
+        "letter": "D",
+        "text": "Another name for update sets"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400154,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 154,
+    "topic": 1,
+    "question": "What happens to the List view when a new field is added to an existing table?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The new field is added at the start of the List"
+      },
+      {
+        "letter": "B",
+        "text": "The new field is added at the end of the List"
+      },
+      {
+        "letter": "C",
+        "text": "The new field is not added to the List view"
+      },
+      {
+        "letter": "D",
+        "text": "A List View is created with the new Field"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400156,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 156,
+    "topic": 1,
+    "question": "What data types of Flow Variables are supported to store record data? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Choice"
+      },
+      {
+        "letter": "B",
+        "text": "Date"
+      },
+      {
+        "letter": "C",
+        "text": "Array"
+      },
+      {
+        "letter": "D",
+        "text": "Integer"
+      },
+      {
+        "letter": "E",
+        "text": "String"
+      }
+    ],
+    "correctAnswer": "BDE",
+    "suggestedAnswer": "BDE"
+  },
+  {
+    "id": 400157,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 157,
+    "topic": 1,
+    "question": "Which of the following objects does a Before Business Rule have access to in a script?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "current"
+      },
+      {
+        "letter": "B",
+        "text": "previous"
+      },
+      {
+        "letter": "C",
+        "text": "GlideRecord"
+      },
+      {
+        "letter": "D",
+        "text": "All of the above"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400158,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 158,
+    "topic": 1,
+    "question": "Which options are strategies for debugging client-side scripts? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_form.addInfoMessage()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.addErrorMessage()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.log()"
+      },
+      {
+        "letter": "D",
+        "text": "jslog()"
+      }
+    ],
+    "correctAnswer": "AD",
+    "suggestedAnswer": "AD"
+  },
+  {
+    "id": 400159,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 159,
+    "topic": 1,
+    "question": "In a privately-scoped application, which methods are used for logging messages in server-side scripts? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.logError()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.log()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.debug()"
+      },
+      {
+        "letter": "D",
+        "text": "gs.info()"
+      },
+      {
+        "letter": "E",
+        "text": "gs.error()"
+      }
+    ],
+    "correctAnswer": "CD",
+    "suggestedAnswer": "CD"
+  },
+  {
+    "id": 400160,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 160,
+    "topic": 1,
+    "question": "When creating an application through the Guided Application Creator, what are the options for creating a table? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Run import jobs"
+      },
+      {
+        "letter": "B",
+        "text": "Use API calls"
+      },
+      {
+        "letter": "C",
+        "text": "Create a table from a template"
+      },
+      {
+        "letter": "D",
+        "text": "Create a table from scratch"
+      },
+      {
+        "letter": "E",
+        "text": "Link to external tables"
+      },
+      {
+        "letter": "F",
+        "text": "Extend a table"
+      },
+      {
+        "letter": "G",
+        "text": "Upload a spreadsheet"
+      }
+    ],
+    "correctAnswer": "DFG",
+    "suggestedAnswer": "DFG"
+  },
+  {
+    "id": 400161,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 161,
+    "topic": 1,
+    "question": "Which one of the following database operations can be controlled with Application Access? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Query"
+      },
+      {
+        "letter": "B",
+        "text": "Update"
+      },
+      {
+        "letter": "C",
+        "text": "Create"
+      },
+      {
+        "letter": "D",
+        "text": "Delete"
+      }
+    ],
+    "correctAnswer": "BC",
+    "suggestedAnswer": "BC"
+  },
+  {
+    "id": 400162,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 162,
+    "topic": 1,
+    "question": "Which is an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The application needs to run a client-side script at the same time every day."
+      },
+      {
+        "letter": "B",
+        "text": "The application needs to query the database every day to look for unassigned records."
+      },
+      {
+        "letter": "C",
+        "text": "To display a custom welcome message when a user logs in."
+      },
+      {
+        "letter": "D",
+        "text": "To validate form input fields before a record is submitted."
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400163,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 163,
+    "topic": 1,
+    "question": "What field type would you select if you want to query records from another table on a form?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use the Date field type."
+      },
+      {
+        "letter": "B",
+        "text": "Use the Phone Number field type."
+      },
+      {
+        "letter": "C",
+        "text": "Use the String field type."
+      },
+      {
+        "letter": "D",
+        "text": "Use the Reference field type."
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400164,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 164,
+    "topic": 1,
+    "question": "What functionality is supported by Flow Designer?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The role flow_operator can create and edit flows."
+      },
+      {
+        "letter": "B",
+        "text": "Flows can be \"Run as” security admin."
+      },
+      {
+        "letter": "C",
+        "text": "Call a subflow from a flow."
+      },
+      {
+        "letter": "D",
+        "text": "Flows can trigger off a record being deleted."
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400166,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 166,
+    "topic": 1,
+    "question": "Which method can be used to install an application on a ServiceNow instance? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Install from the Google Play Store."
+      },
+      {
+        "letter": "B",
+        "text": "Download from Stack Overflow."
+      },
+      {
+        "letter": "C",
+        "text": "Download and install a third-party application from the ServiceNow Store."
+      },
+      {
+        "letter": "D",
+        "text": "Use the \"Install\" button on the application record."
+      },
+      {
+        "letter": "E",
+        "text": "Install an application from the Application Repository."
+      },
+      {
+        "letter": "F",
+        "text": "Import an application from an XML file."
+      }
+    ],
+    "correctAnswer": "CEF",
+    "suggestedAnswer": "CEF"
+  },
+  {
+    "id": 400168,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 168,
+    "topic": 1,
+    "question": "Which are valid caller access field options? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Caller Tracking"
+      },
+      {
+        "letter": "B",
+        "text": "Accessible from"
+      },
+      {
+        "letter": "C",
+        "text": "None"
+      },
+      {
+        "letter": "D",
+        "text": "Allow Configuration"
+      },
+      {
+        "letter": "E",
+        "text": "Caller Restriction"
+      },
+      {
+        "letter": "F",
+        "text": "Caller Permission"
+      }
+    ],
+    "correctAnswer": "ACE",
+    "suggestedAnswer": "ACE"
+  },
+  {
+    "id": 400169,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 169,
+    "topic": 1,
+    "question": "Which items are valid UI Action types in ServiceNow? (Choose three.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "List banner button"
+      },
+      {
+        "letter": "B",
+        "text": "Form button"
+      },
+      {
+        "letter": "C",
+        "text": "Record navigation button"
+      },
+      {
+        "letter": "D",
+        "text": "List choice"
+      },
+      {
+        "letter": "E",
+        "text": "Form choice"
+      },
+      {
+        "letter": "F",
+        "text": "Workflow action"
+      }
+    ],
+    "correctAnswer": "ABD",
+    "suggestedAnswer": "ABD"
+  },
+  {
+    "id": 400170,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 170,
+    "topic": 1,
+    "question": "What occurs when an existing table is extended in ServiceNow?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The parent table's Access Controls are ignored when determining access to the new table's records and fields."
+      },
+      {
+        "letter": "B",
+        "text": "The new table does not inherit any of the fields from the parent table."
+      },
+      {
+        "letter": "C",
+        "text": "You must script and configure all required behaviors."
+      },
+      {
+        "letter": "D",
+        "text": "The new table inherits the functionality built into the parent table."
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400171,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 171,
+    "topic": 1,
+    "question": "An application called My App has a table, MyAppTable, with this Application Access configuration:Accessible from: All application scopesCan read: Selected -Can delete: Not selected -Allow configuration: Selected -Which of the following is true based on this configuration?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "An application developer working in another privately scoped application can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table"
+      },
+      {
+        "letter": "B",
+        "text": "An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table"
+      },
+      {
+        "letter": "C",
+        "text": "Any Application developer can write a Business Rule which successfully deletes all records from the MyAppTable"
+      },
+      {
+        "letter": "D",
+        "text": "No Business Rule can be written which successfully deletes all records from the MyAppTable table"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400172,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 172,
+    "topic": 1,
+    "question": "Which one of the following is true about client-side scripted security?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Client-side scripts have access to both the GlideSystem (gs) and GlideUser (g_user) methods"
+      },
+      {
+        "letter": "B",
+        "text": "Client-side scripts have access to the GlideUser (g_user) methods"
+      },
+      {
+        "letter": "C",
+        "text": "Client-side scripts have no access to user methods"
+      },
+      {
+        "letter": "D",
+        "text": "Client-side scripts have access to the GlideSystem (gs) user methods"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 400173,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 173,
+    "topic": 1,
+    "question": "How can Administrators expand the list of supported file types for code search in ServiceNow Studio?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "By modifying the default code search table"
+      },
+      {
+        "letter": "B",
+        "text": "By configuring metadata synchronization settings"
+      },
+      {
+        "letter": "C",
+        "text": "By creating a new code search group"
+      },
+      {
+        "letter": "D",
+        "text": "By adding new file types to a custom search group"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400174,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 174,
+    "topic": 1,
+    "question": "What happens if a record producer script aborts the record generation process in ServiceNow?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Record creation displays an error message to the user"
+      },
+      {
+        "letter": "B",
+        "text": "Record is not generated in the Item Produced Record table"
+      },
+      {
+        "letter": "C",
+        "text": "Record creation is redirected to a confirmation page"
+      },
+      {
+        "letter": "D",
+        "text": "Record creation terminates without notifying the user"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400175,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 175,
+    "topic": 1,
+    "question": "What is a function of an update set in ServiceNow Studio?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To track and monitor system performance metrics"
+      },
+      {
+        "letter": "B",
+        "text": "To create new custom applications"
+      },
+      {
+        "letter": "C",
+        "text": "To manage configurations directly in a production environment"
+      },
+      {
+        "letter": "D",
+        "text": "To group configuration changes for transfer between instances"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400176,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 176,
+    "topic": 1,
+    "question": "How can an application respond to an Event triggered by the gs.eventQueue() method? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Client Script"
+      },
+      {
+        "letter": "B",
+        "text": "UI Policy"
+      },
+      {
+        "letter": "C",
+        "text": "Script Action"
+      },
+      {
+        "letter": "D",
+        "text": "Scheduled Script Execution (Scheduled Job)"
+      },
+      {
+        "letter": "E",
+        "text": "Email Notification"
+      }
+    ],
+    "correctAnswer": "CE",
+    "suggestedAnswer": "CE"
+  },
+  {
+    "id": 400180,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 180,
+    "topic": 1,
+    "question": "Which table in ServiceNow stores the details of customizations included in an update set?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Customer Update [sys_update_xml]"
+      },
+      {
+        "letter": "B",
+        "text": "System Properties [sys_properties]"
+      },
+      {
+        "letter": "C",
+        "text": "Application Registry [sys_app]"
+      },
+      {
+        "letter": "D",
+        "text": "Update Set [sys_update_set]"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400183,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 183,
+    "topic": 1,
+    "question": "What is displayed to delegated developers to package changes for deployment in ServiceNow Studio?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tools tab"
+      },
+      {
+        "letter": "B",
+        "text": "Export to XML"
+      },
+      {
+        "letter": "C",
+        "text": "Publish Button"
+      },
+      {
+        "letter": "D",
+        "text": "Update Set Picker"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D"
+  },
+  {
+    "id": 400184,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 184,
+    "topic": 1,
+    "question": "What does Application Scoping provide? (Choose two.)",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A method to track users involved in developing the application."
+      },
+      {
+        "letter": "B",
+        "text": "A namespace (prefix and scope name) to prevent cross-application name collisions."
+      },
+      {
+        "letter": "C",
+        "text": "A means to control which roles can view the application and its related modules."
+      },
+      {
+        "letter": "D",
+        "text": "A means to control how scripts from other scopes can alter tables in a scoped application."
+      }
+    ],
+    "correctAnswer": "BD",
+    "suggestedAnswer": "BD"
+  },
+  {
+    "id": 400190,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 190,
+    "topic": 1,
+    "question": "Which Client-side scoped API class can be used as a replacement for GlideRecord?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GlideElement"
+      },
+      {
+        "letter": "B",
+        "text": "GlideDialogWindow"
+      },
+      {
+        "letter": "C",
+        "text": "GlideAjax"
+      },
+      {
+        "letter": "D",
+        "text": "GlideForm"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C"
+  },
+  {
+    "id": 400200,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 200,
+    "topic": 1,
+    "question": "How does ServiceNow match inbound email to existing records?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Watermark"
+      },
+      {
+        "letter": "B",
+        "text": "Record link"
+      },
+      {
+        "letter": "C",
+        "text": "Subject line with record number"
+      },
+      {
+        "letter": "D",
+        "text": "sys_id"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 400211,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 211,
+    "topic": 1,
+    "question": "What are the available Link types that can be assigned to a module in ServiceNow?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "List of Records, Content Page, Order, URL (from arguments:)"
+      },
+      {
+        "letter": "B",
+        "text": "List of Records, Separator, Catalog Type, Roles"
+      },
+      {
+        "letter": "C",
+        "text": "Assessment List of Records, Content Page, Roles"
+      },
+      {
+        "letter": "D",
+        "text": "Assessment, List of Records, Separator, Timeline Page"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  }
+]

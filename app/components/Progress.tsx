@@ -11,21 +11,22 @@ interface ProgressProps {
 
 export default function Progress({ progress, questions, onResetProgress }: ProgressProps) {
   const [showConfirm, setShowConfirm] = useState(false);
+  const questionKeys = new Set(questions.map((question) => question.progressKey || `${question.exam}-${question.id}`));
+  const scopedProgressEntries = Object.entries(progress).filter(([key]) => questionKeys.has(key));
 
   const totalQuestions = questions.length;
-  const attempted = Object.keys(progress).filter(id => {
-    const q = progress[id];
+  const attempted = scopedProgressEntries.filter(([, q]) => {
     return q && q.attempts > 0;
   }).length;
 
-  const mastered = Object.keys(progress).filter(id => {
-    const q = progress[id];
+  const mastered = scopedProgressEntries.filter(([, q]) => {
     return q && q.mastered;
   }).length;
 
-  const totalAttempts = Object.values(progress).reduce((sum, p) => sum + p.attempts, 0);
-  const totalCorrect = Object.values(progress).reduce((sum, p) => sum + p.correct, 0);
+  const totalAttempts = scopedProgressEntries.reduce((sum, [, p]) => sum + p.attempts, 0);
+  const totalCorrect = scopedProgressEntries.reduce((sum, [, p]) => sum + p.correct, 0);
   const overallAccuracy = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
+  const progressPercent = totalQuestions > 0 ? Math.round((attempted / totalQuestions) * 100) : 0;
 
   const handleReset = () => {
     onResetProgress();
@@ -84,12 +85,12 @@ export default function Progress({ progress, questions, onResetProgress }: Progr
       <div className="mt-4">
         <div className="flex justify-between text-xs sm:text-sm text-gray-600 mb-1">
           <span>Progress</span>
-          <span>{Math.round((attempted / totalQuestions) * 100)}%</span>
+          <span>{progressPercent}%</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-3">
           <div
             className="bg-blue-600 h-3 rounded-full transition-all duration-500"
-            style={{ width: `${(attempted / totalQuestions) * 100}%` }}
+            style={{ width: `${progressPercent}%` }}
           />
         </div>
       </div>

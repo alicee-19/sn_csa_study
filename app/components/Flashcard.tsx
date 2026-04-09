@@ -1,16 +1,21 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useCallback, useRef } from 'react';
-import { Question, StudyProgress } from '../types';
+import { useState, useEffect, useRef } from "react";
+import { Question, StudyProgress } from "../types";
 
 interface FlashcardProps {
   questions: Question[];
   progress: StudyProgress;
-  onUpdateProgress: (questionId: number, isCorrect: boolean) => void;
+  onUpdateProgress: (questionKey: string, isCorrect: boolean) => void;
   onComplete: () => void;
 }
 
-export default function Flashcard({ questions, progress, onUpdateProgress, onComplete }: FlashcardProps) {
+export default function Flashcard({
+  questions,
+  progress,
+  onUpdateProgress,
+  onComplete,
+}: FlashcardProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -31,26 +36,32 @@ export default function Flashcard({ questions, progress, onUpdateProgress, onCom
 
   if (questions.length === 0) {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 text-center">
-        <p className="text-gray-600">No questions available for the selected filter.</p>
+      <div className='bg-white rounded-lg shadow-md p-6 sm:p-8 text-center'>
+        <p className='text-gray-600'>
+          No questions available for the selected filter.
+        </p>
       </div>
     );
   }
 
   if (completed) {
-    const studiedCount = questions.filter(q => {
-      const p = progress[q.id];
+    const studiedCount = questions.filter((q) => {
+      const p = progress[q.progressKey || `${q.exam}-${q.id}`];
       return p && p.attempts > 0;
     }).length;
 
     return (
-      <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Flashcards Complete!</h2>
-        <p className="text-lg text-gray-600 mb-6">You reviewed all {questions.length} questions.</p>
-        <p className="text-gray-500 mb-8">{studiedCount} marked as studied</p>
+      <div className='bg-white rounded-lg shadow-md p-6 sm:p-8 text-center'>
+        <h2 className='text-2xl sm:text-3xl font-bold text-gray-800 mb-4'>
+          Flashcards Complete!
+        </h2>
+        <p className='text-lg text-gray-600 mb-6'>
+          You reviewed all {questions.length} questions.
+        </p>
+        <p className='text-gray-500 mb-8'>{studiedCount} marked as studied</p>
         <button
           onClick={onComplete}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors"
+          className='w-full bg-blue-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-700 transition-colors'
         >
           Back to Settings
         </button>
@@ -59,21 +70,25 @@ export default function Flashcard({ questions, progress, onUpdateProgress, onCom
   }
 
   const current = questions[currentIndex];
-  const correctAnswers = current.correctAnswer.split('');
-  const correctOptions = current.options.filter(opt => correctAnswers.includes(opt.letter));
+  const correctAnswers = (current.correctAnswer || "").split("");
+  const correctOptions = current.options.filter((opt) =>
+    correctAnswers.includes(opt.letter)
+  );
   const isMultiAnswer = correctAnswers.length > 1;
   const isLastQuestion = currentIndex === questions.length - 1;
+  const isDragDropQuestion =
+    current.questionType === "drag_drop" && !!current.dragDrop;
 
   const handleFlip = () => {
     if (isTransitioning) return;
-    setIsFlipped(prev => !prev);
+    setIsFlipped((prev) => !prev);
   };
 
   const advanceOrComplete = () => {
     if (isLastQuestion) {
       setCompleted(true);
     } else {
-      setCurrentIndex(prev => prev + 1);
+      setCurrentIndex((prev) => prev + 1);
     }
   };
 
@@ -107,84 +122,216 @@ export default function Flashcard({ questions, progress, onUpdateProgress, onCom
     if (currentIndex === 0) return;
     if (isFlipped) {
       setIsTransitioning(true);
-      pendingAction.current = () => setCurrentIndex(prev => prev - 1);
+      pendingAction.current = () => setCurrentIndex((prev) => prev - 1);
       setIsFlipped(false);
     } else {
-      setCurrentIndex(prev => prev - 1);
+      setCurrentIndex((prev) => prev - 1);
     }
   };
 
   const handleStudied = () => {
     if (isTransitioning) return;
-    flipThenAdvance(() => onUpdateProgress(current.id, true));
+    flipThenAdvance(() =>
+      onUpdateProgress(
+        current.progressKey || `${current.exam}-${current.id}`,
+        true
+      )
+    );
   };
 
   const handleNotStudied = () => {
     if (isTransitioning) return;
-    flipThenAdvance(() => onUpdateProgress(current.id, false));
+    flipThenAdvance(() =>
+      onUpdateProgress(
+        current.progressKey || `${current.exam}-${current.id}`,
+        false
+      )
+    );
   };
 
-  const progressInfo = progress[current.id];
-  const accuracy = progressInfo ? Math.round((progressInfo.correct / progressInfo.attempts) * 100) : 0;
+  const progressInfo =
+    progress[current.progressKey || `${current.exam}-${current.id}`];
+  const accuracy = progressInfo
+    ? Math.round((progressInfo.correct / progressInfo.attempts) * 100)
+    : 0;
 
   return (
-    <div className="space-y-4">
-      <div className="flex justify-between items-center text-xs sm:text-sm text-gray-600">
-        <span>Question {currentIndex + 1} of {questions.length}</span>
-        <span>Topic {current.topic} • Q#{current.questionNumber}</span>
+    <div className='space-y-4'>
+      <div className='flex justify-between items-center text-xs sm:text-sm text-gray-600'>
+        <span>
+          Question {currentIndex + 1} of {questions.length}
+        </span>
+        <span>
+          Topic {current.topic} • Q#{current.questionNumber}
+        </span>
       </div>
 
       {/* Flip Card */}
-      <div className="flashcard-container cursor-pointer" onClick={handleFlip}>
-        <div className={`flashcard-inner ${isFlipped ? 'flipped' : ''}`}>
+      <div className='flashcard-container cursor-pointer' onClick={handleFlip}>
+        <div className={`flashcard-inner ${isFlipped ? "flipped" : ""}`}>
           {/* Front - Question */}
-          <div className="flashcard-front bg-white shadow-lg border-2 border-gray-200 p-5 sm:p-8">
-            <div className="flex items-center gap-2 text-xs text-gray-400 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          <div className='flashcard-front bg-white shadow-lg border-2 border-gray-200 p-5 sm:p-8'>
+            <div className='flex items-center gap-2 text-xs text-gray-400 mb-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-4 w-4'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
+                />
               </svg>
               <span>Tap to flip</span>
             </div>
-            <h2 className="text-base sm:text-xl font-semibold text-gray-800 mb-4">{current.question}</h2>
-            {isMultiAnswer && (
-              <p className="text-xs sm:text-sm text-blue-600 mb-3">({correctAnswers.length} correct answers)</p>
-            )}
-            <div className="space-y-2 sm:space-y-3 mt-4">
-              {current.options.map((option) => (
-                <div
-                  key={option.letter}
-                  className="p-2 sm:p-3 border border-gray-200 rounded-md bg-gray-50 text-sm sm:text-base"
-                >
-                  <span className="font-medium text-gray-700">{option.letter}.</span> {option.text}
-                </div>
-              ))}
-            </div>
-          </div>
+            <h2 className='text-base sm:text-xl font-semibold text-gray-800 mb-4 whitespace-pre-line'>
+              {current.question}
+            </h2>
 
-          {/* Back - Answer */}
-          <div className="flashcard-back bg-gradient-to-br from-green-50 to-emerald-50 shadow-lg border-2 border-green-300 p-5 sm:p-8">
-            <div className="flex items-center gap-2 text-xs text-gray-400 mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              <span>Tap to flip back</span>
-            </div>
-            <div className="mb-6">
-              <p className="text-sm sm:text-base font-semibold text-green-800 mb-1">
-                Correct Answer{isMultiAnswer ? 's' : ''}:
+            {current.imageUrl && (
+              <div className='mb-4 border-2 border-dashed border-gray-300 rounded-md min-h-36 flex items-center justify-center bg-gray-50 overflow-hidden'>
+                <img
+                  src={current.imageUrl}
+                  alt={current.imageAlt || "Question visual"}
+                  className='max-h-72 w-full object-contain'
+                />
+              </div>
+            )}
+            {isMultiAnswer && !isDragDropQuestion && (
+              <p className='text-xs sm:text-sm text-blue-600 mb-3'>
+                ({correctAnswers.length} correct answers)
               </p>
-              <div className="space-y-2 mt-3">
-                {correctOptions.map(opt => (
-                  <div key={opt.letter} className="p-2 sm:p-3 bg-green-100 border border-green-300 rounded-md text-sm sm:text-base">
-                    <span className="font-bold text-green-800">{opt.letter}.</span>{' '}
-                    <span className="text-green-900">{opt.text}</span>
+            )}
+            {isDragDropQuestion ? (
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
+                <div>
+                  <p className='text-sm font-semibold text-gray-700 mb-2'>
+                    Column A
+                  </p>
+                  <div className='space-y-2'>
+                    {current.dragDrop?.columnA.map((item) => (
+                      <div
+                        key={item.id}
+                        className='p-2 sm:p-3 border border-gray-200 rounded-md bg-gray-50 text-sm sm:text-base'
+                      >
+                        <span className='whitespace-pre-line'>{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className='text-sm font-semibold text-gray-700 mb-2'>
+                    Column B
+                  </p>
+                  <div className='space-y-2'>
+                    {current.dragDrop?.columnB.map((item) => (
+                      <div
+                        key={item.id}
+                        className='p-2 sm:p-3 border border-gray-200 rounded-md bg-gray-50 text-sm sm:text-base'
+                      >
+                        <span className='whitespace-pre-line'>{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className='space-y-2 sm:space-y-3 mt-4'>
+                {current.options.map((option) => (
+                  <div
+                    key={option.letter}
+                    className='p-2 sm:p-3 border border-gray-200 rounded-md bg-gray-50 text-sm sm:text-base'
+                  >
+                    <span className='font-medium text-gray-700'>
+                      {option.letter}.
+                    </span>{" "}
+                    <span className='whitespace-pre-line'>{option.text}</span>
                   </div>
                 ))}
               </div>
+            )}
+          </div>
+
+          {/* Back - Answer */}
+          <div className='flashcard-back bg-gradient-to-br from-green-50 to-emerald-50 shadow-lg border-2 border-green-300 p-5 sm:p-8'>
+            <div className='flex items-center gap-2 text-xs text-gray-400 mb-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-4 w-4'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
+                />
+              </svg>
+              <span>Tap to flip back</span>
             </div>
-            <div className="mt-4 pt-4 border-t border-green-200">
-              <p className="text-xs sm:text-sm text-gray-500 mb-2">Original question:</p>
-              <p className="text-sm sm:text-base text-gray-700 italic">{current.question}</p>
+            <div className='mb-6'>
+              {isDragDropQuestion ? (
+                <>
+                  <p className='text-sm sm:text-base font-semibold text-green-800 mb-1'>
+                    Correct Mapping:
+                  </p>
+                  <div className='space-y-2 mt-3'>
+                    {current.dragDrop?.correctMatches.map((match) => {
+                      const left = current.dragDrop?.columnA.find(
+                        (item) => item.id === match.leftId
+                      );
+                      const right = current.dragDrop?.columnB.find(
+                        (item) => item.id === match.rightId
+                      );
+                      return (
+                        <div
+                          key={`${match.leftId}-${match.rightId}`}
+                          className='p-2 sm:p-3 bg-green-100 border border-green-300 rounded-md text-sm sm:text-base'
+                        >
+                          <span className='font-semibold text-green-900'>
+                            <span className='whitespace-pre-line'>{left?.text}</span>
+                          </span>
+                          <span className='mx-2 text-green-700'>→</span>
+                          <span className='text-green-900 whitespace-pre-line'>{right?.text}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <p className='text-sm sm:text-base font-semibold text-green-800 mb-1'>
+                    Correct Answer{isMultiAnswer ? "s" : ""}:
+                  </p>
+                  <div className='space-y-2 mt-3'>
+                    {correctOptions.map((opt) => (
+                      <div
+                        key={opt.letter}
+                        className='p-2 sm:p-3 bg-green-100 border border-green-300 rounded-md text-sm sm:text-base'
+                      >
+                        <span className='font-bold text-green-800'>
+                          {opt.letter}.
+                        </span>{" "}
+                        <span className='text-green-900'>{opt.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+            <div className='mt-4 pt-4 border-t border-green-200'>
+              <p className='text-xs sm:text-sm text-gray-500 mb-2'>
+                Original question:
+              </p>
+              <p className='text-sm sm:text-base text-gray-700 italic whitespace-pre-line'>
+                {current.question}
+              </p>
             </div>
           </div>
         </div>
@@ -192,47 +339,49 @@ export default function Flashcard({ questions, progress, onUpdateProgress, onCom
 
       {/* Progress info */}
       {progressInfo && (
-        <div className="p-3 bg-gray-50 rounded-md text-xs sm:text-sm">
-          <div className="flex flex-wrap justify-between gap-2 text-gray-600">
+        <div className='p-3 bg-gray-50 rounded-md text-xs sm:text-sm'>
+          <div className='flex flex-wrap justify-between gap-2 text-gray-600'>
             <span>Attempts: {progressInfo.attempts}</span>
             <span>Correct: {progressInfo.correct}</span>
             <span>Accuracy: {accuracy}%</span>
-            {progressInfo.mastered && <span className="text-green-600 font-semibold">Mastered</span>}
+            {progressInfo.mastered && (
+              <span className='text-green-600 font-semibold'>Mastered</span>
+            )}
           </div>
         </div>
       )}
 
       {/* Action buttons - Studied / Not Studied */}
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className='flex flex-col sm:flex-row gap-3'>
         <button
           onClick={handleStudied}
-          className="flex-1 bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 active:bg-green-800 transition-colors text-sm sm:text-base"
+          className='flex-1 bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 active:bg-green-800 transition-colors text-sm sm:text-base'
         >
           Studied
         </button>
         <button
           onClick={handleNotStudied}
-          className="flex-1 bg-amber-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-amber-600 active:bg-amber-700 transition-colors text-sm sm:text-base"
+          className='flex-1 bg-amber-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-amber-600 active:bg-amber-700 transition-colors text-sm sm:text-base'
         >
           Not Studied
         </button>
       </div>
 
       {/* Navigation */}
-      <div className="flex gap-3">
+      <div className='flex gap-3'>
         <button
           onClick={handlePrevious}
           disabled={currentIndex === 0 || isTransitioning}
-          className="flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 active:bg-gray-100 transition-colors text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+          className='flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 active:bg-gray-100 transition-colors text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed'
         >
           Previous
         </button>
         <button
           onClick={handleNext}
           disabled={isTransitioning}
-          className="flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 active:bg-gray-100 transition-colors text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+          className='flex-1 py-2 px-4 border border-gray-300 rounded-md hover:bg-gray-50 active:bg-gray-100 transition-colors text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed'
         >
-          {isLastQuestion ? 'Finish' : 'Next'}
+          {isLastQuestion ? "Finish" : "Next"}
         </button>
       </div>
     </div>
