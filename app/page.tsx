@@ -9,7 +9,7 @@ import { Question, StudyProgress, StudyMode, QuestionFilter, ExamTrack, Question
 import { STUDY_CONFIG } from './study-config';
 import cisDfQuestionsData from './data/questions.json';
 import examtopicsCadQuestionsData from './data/examtopics-cad.json';
-import kyleCadQuestionsData from './data/kyle-cad.json';
+//import kyleCadQuestionsData from './data/kyle-cad.json';
 
 export default function Home() {
   const [selectedExam, setSelectedExam] = useState<ExamTrack>('cis-df');
@@ -69,11 +69,12 @@ export default function Home() {
   const getQuestionsForSelection = (): Question[] => {
     if (selectedExam === 'cad') {
       const examtopics = normalizeQuestions(examtopicsCadQuestionsData as Question[], 'cad', 'examtopics');
-      const kyle = normalizeQuestions(kyleCadQuestionsData as Question[], 'cad', 'kyle');
+      //const kyle = normalizeQuestions(kyleCadQuestionsData as Question[], 'cad', 'kyle');
 
       if (selectedSource === 'examtopics') return examtopics;
-      if (selectedSource === 'kyle') return kyle;
-      return [...examtopics, ...kyle];
+      //if (selectedSource === 'kyle') return kyle;
+      //return [...examtopics, ...kyle];
+      return [...examtopics];
     }
 
     const cisExamtopics = normalizeQuestions(cisDfQuestionsData as Question[], 'cis-df', 'examtopics');
