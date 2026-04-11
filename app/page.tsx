@@ -19,10 +19,10 @@ import examtopicsCadQuestionsData from "./data/examtopics-cad.json";
 //import kyleCadQuestionsData from './data/kyle-cad.json';
 
 export default function Home() {
-  const [selectedExam, setSelectedExam] = useState<ExamTrack>("cis-df");
+  const [selectedExam, setSelectedExam] = useState<ExamTrack>("cad");
   const [selectedSource, setSelectedSource] =
     useState<QuestionSource>("examtopics");
-  const [mode, setMode] = useState<StudyMode>("flashcard");
+  const [mode, setMode] = useState<StudyMode>("quiz");
   const [filter, setFilter] = useState<QuestionFilter>("all");
   const [randomCount, setRandomCount] = useState<number>(10);
   const [examQuestionCount, setExamQuestionCount] = useState<number>(20);
