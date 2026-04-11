@@ -1,0 +1,201 @@
+[
+  {
+    "id": 300001,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 1,
+    "topic": 1,
+    "question": "Which artifact runs JavaScript on the server when a record is inserted, updated, deleted, displayed, or queried?",
+    "explanation": "Business Rules are server-side scripts that execute based on record operations, allowing you to enforce data integrity, automate processes, and integrate with external systems without impacting client performance.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD server-side logic image",
+    "options": [
+      {
+        "letter": "A",
+        "text": "UI Policy"
+      },
+      {
+        "letter": "B",
+        "text": "Business Rule"
+      },
+      {
+        "letter": "C",
+        "text": "Client Script"
+      },
+      {
+        "letter": "D",
+        "text": "Data Policy"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B"
+  },
+  {
+    "id": 300002,
+    "exam": "cad",
+    "questionType": "mcq",
+    "questionNumber": 2,
+    "topic": 1,
+    "question": "Which option is best for building low-code process automations with triggers and actions?",
+    "imageUrl": "",
+    "imageAlt": "Optional flow designer screenshot",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Flow Designer"
+      },
+      {
+        "letter": "B",
+        "text": "Transform Event Script"
+      },
+      {
+        "letter": "C",
+        "text": "Import Set API"
+      },
+      {
+        "letter": "D",
+        "text": "Email Template"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A"
+  },
+  {
+    "id": 300003,
+    "exam": "cad",
+    "questionType": "drag_drop",
+    "questionNumber": 3,
+    "topic": 2,
+    "question": "Match each development artifact to its primary purpose.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD architecture diagram",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "Business Rule"
+        },
+        {
+          "id": "a2",
+          "text": "UI Policy"
+        },
+        {
+          "id": "a3",
+          "text": "Client Script"
+        },
+        {
+          "id": "a4",
+          "text": "Flow Designer"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Automate multi-step process without scripting"
+        },
+        {
+          "id": "b2",
+          "text": "Run server-side logic on record operations"
+        },
+        {
+          "id": "b3",
+          "text": "Change form field behavior declaratively"
+        },
+        {
+          "id": "b4",
+          "text": "Run JavaScript in the browser on forms"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b2"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b3"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b4"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 300004,
+    "exam": "cad",
+    "questionType": "drag_drop",
+    "questionNumber": 4,
+    "topic": 2,
+    "question": "Match each table concept with the best description.",
+    "imageUrl": "",
+    "imageAlt": "Optional table relationship visual",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "Reference field"
+        },
+        {
+          "id": "a2",
+          "text": "Table extension"
+        },
+        {
+          "id": "a3",
+          "text": "Dictionary Override"
+        },
+        {
+          "id": "a4",
+          "text": "Choice field"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Inherits columns and behavior from parent table"
+        },
+        {
+          "id": "b2",
+          "text": "Points to one record in another table"
+        },
+        {
+          "id": "b3",
+          "text": "Overrides inherited dictionary attributes"
+        },
+        {
+          "id": "b4",
+          "text": "Stores one value from predefined options"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b2"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b1"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b3"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b4"
+        }
+      ]
+    }
+  }
+]

@@ -1,5 +1,281 @@
 [
   {
+    "id": 200001,
+    "exam": "cad",
+    "questionType": "drag_drop",
+    "questionNumber": 1,
+    "topic": 1,
+    "question": "Match each ServiceNow artifact with its primary purpose.",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD diagram",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "Business Rule"
+        },
+        {
+          "id": "a2",
+          "text": "UI Policy"
+        },
+        {
+          "id": "a3",
+          "text": "Client Script"
+        },
+        {
+          "id": "a4",
+          "text": "Flow Designer"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Automate multi-step process without scripting"
+        },
+        {
+          "id": "b2",
+          "text": "Run server-side logic on insert/update/delete"
+        },
+        {
+          "id": "b3",
+          "text": "Change form field behavior declaratively"
+        },
+        {
+          "id": "b4",
+          "text": "Run JavaScript in the browser on forms"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b2"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b3"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b4"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b1"
+        }
+      ]
+    }
+  },
+  {
+    "id": 200002,
+    "exam": "cad",
+    "questionType": "drag_drop",
+    "questionNumber": 2,
+    "topic": 2,
+    "question": "Match each table relationship concept to the correct description.",
+    "imageUrl": "",
+    "imageAlt": "Optional table relationship visual",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "Reference field"
+        },
+        {
+          "id": "a2",
+          "text": "Dictionary Override"
+        },
+        {
+          "id": "a3",
+          "text": "Table extension"
+        },
+        {
+          "id": "a4",
+          "text": "Choice field"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Inherits columns/behavior from a parent table"
+        },
+        {
+          "id": "b2",
+          "text": "Points to a record in another table"
+        },
+        {
+          "id": "b3",
+          "text": "Overrides dictionary attributes on an extended table"
+        },
+        {
+          "id": "b4",
+          "text": "Stores one value from predefined options"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b2"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b3"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b1"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b4"
+        }
+      ]
+    }
+  },
+  {
+    "id": 200003,
+    "exam": "cis-df",
+    "questionType": "drag_drop",
+    "questionNumber": 1,
+    "topic": 1,
+    "question": "Match each data management term with the best definition.",
+    "imageUrl": "",
+    "imageAlt": "Optional CIS-DF data flow diagram",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "Data Source"
+        },
+        {
+          "id": "a2",
+          "text": "Import Set"
+        },
+        {
+          "id": "a3",
+          "text": "Transform Map"
+        },
+        {
+          "id": "a4",
+          "text": "Coalesce"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Temporary staging table for incoming records"
+        },
+        {
+          "id": "b2",
+          "text": "Rule defining how import fields map to target table"
+        },
+        {
+          "id": "b3",
+          "text": "Property used to match existing target records"
+        },
+        {
+          "id": "b4",
+          "text": "Connection details for inbound data file/feed"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b4"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b1"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b2"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b3"
+        }
+      ]
+    }
+  },
+  {
+    "id": 200004,
+    "exam": "cis-df",
+    "questionType": "drag_drop",
+    "questionNumber": 2,
+    "topic": 2,
+    "question": "Match each platform capability to the most suitable use case.",
+    "imageUrl": "",
+    "imageAlt": "Optional platform capability screenshot",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "dragDrop": {
+      "columnA": [
+        {
+          "id": "a1",
+          "text": "List filter"
+        },
+        {
+          "id": "a2",
+          "text": "Report"
+        },
+        {
+          "id": "a3",
+          "text": "Dashboard"
+        },
+        {
+          "id": "a4",
+          "text": "Notification"
+        }
+      ],
+      "columnB": [
+        {
+          "id": "b1",
+          "text": "Visualize multiple KPIs in one place"
+        },
+        {
+          "id": "b2",
+          "text": "Send email/event-driven alert to users"
+        },
+        {
+          "id": "b3",
+          "text": "Narrow records shown in a table view"
+        },
+        {
+          "id": "b4",
+          "text": "Summarize data with charts/tables"
+        }
+      ],
+      "correctMatches": [
+        {
+          "leftId": "a1",
+          "rightId": "b3"
+        },
+        {
+          "leftId": "a2",
+          "rightId": "b4"
+        },
+        {
+          "leftId": "a3",
+          "rightId": "b1"
+        },
+        {
+          "leftId": "a4",
+          "rightId": "b2"
+        }
+      ]
+    }
+  },
+  {
     "id": 1,
     "questionNumber": 1,
     "topic": 1,

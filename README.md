@@ -1,131 +1,145 @@
-# ServiceNow CSA Study App
+# ServiceNow Exam Study App
 
-A modern, interactive study application for the ServiceNow Certified System Administrator (CSA) exam. Built with Next.js and React, this app helps you prepare efficiently with flashcards, quizzes, and progress tracking.
+Interactive study app for ServiceNow certification prep with multi-exam support, configurable study sources, and three study modes.
 
-## Features
+## What The App Supports
 
-### 📚 Study Modes
-- **Flashcard Mode**: Test your knowledge and reveal answers at your own pace
-- **Quiz Mode**: Take practice quizzes with instant feedback
+- Exam tracks:
+   - CAD
+   - CIS - DF
+- Study sources are controlled by app/study-config.ts
+- Study modes:
+   - Flashcard
+   - Quiz
+   - Exam
 
-### 🎯 Smart Question Selection
-- **All Questions**: Study all 374 exam questions
-- **Failed Questions**: Focus on questions you've struggled with
-- **Random Selection**: Generate custom quizzes with a specified number of random questions
+## Core Features
 
-### 📊 Progress Tracking
-- Track attempts and accuracy for each question
-- Monitor overall study progress
-- Identify mastered questions (3+ correct answers with 80%+ accuracy)
-- All progress saved locally in your browser
+- Settings-first flow to choose exam, source, and mode
+- Question set options for study sessions:
+   - All questions
+   - Failed questions
+   - Random set
+- Exam mode behavior:
+   - Select number of questions
+   - No per-question answer reveal
+   - Full answer review shown after exam completion
+- Progress tracking (localStorage): attempts, correct count, mastery, accuracy
+- Explanation support per question:
+   - Quiz: explanation replaces success/failure feedback when available
+   - Flashcard back: explanation replaces original question text when available
+- Image support per question through imageUrl
+- Support for MCQ and drag-and-drop question types
 
-### 🎨 Clean, Minimal UI
-- Simple, distraction-free interface
-- Easy navigation and intuitive controls
-- Responsive design works on all devices
+## Tech Stack
 
-## Getting Started
+- Next.js 15
+- React 18
+- TypeScript
+- Tailwind CSS
+- Static export output for deployment to static hosts
 
-### Prerequisites
-- Node.js 18+ installed
+## Run Locally
 
-### Installation
+Prerequisite: Node.js 18+
 
-1. Clone or download this repository
+1. Install dependencies
 
-2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Run the development server:
+2. Start development server
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+3. Open http://localhost:3000
 
-## Deployment
+## Build And Serve Production Output
 
-This app is configured for easy deployment to Vercel or Netlify.
+This project exports static files to out.
 
-### Deploy to Vercel
+1. Build
 
-1. Push your code to GitHub
-2. Visit [vercel.com](https://vercel.com)
-3. Click "New Project"
-4. Import your GitHub repository
-5. Vercel will auto-detect Next.js and deploy
-
-Or use the Vercel CLI:
 ```bash
-npm install -g vercel
-vercel
-```
-
-### Deploy to Netlify
-
-1. Push your code to GitHub
-2. Visit [netlify.com](https://netlify.com)
-3. Click "New site from Git"
-4. Select your repository
-5. Build settings:
-   - Build command: `npm run build`
-   - Publish directory: `out`
-6. Click "Deploy site"
-
-Or use the Netlify CLI:
-```bash
-npm install -g netlify-cli
 npm run build
-netlify deploy --prod --dir=out
 ```
 
-## Study Tips
+2. Serve exported files
 
-1. **Start with Flashcards**: Get familiar with questions first
-2. **Use Quiz Mode**: Test yourself under exam-like conditions
-3. **Focus on Failed Questions**: Review questions you've missed
-4. **Track Your Progress**: Aim for 80%+ accuracy on all questions
-5. **Regular Practice**: Study a little each day for best retention
+```bash
+npm start
+```
 
-## Data Source
+npm start runs serve against out.
 
-Questions are parsed from the ExamTopics ServiceNow CSA question bank. The app contains 374 real exam questions with verified answers.
+## Data Model
 
-## Technology Stack
+Question objects can include:
 
-- **Framework**: Next.js 14 (React)
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Storage**: LocalStorage (browser-based)
-- **Deployment**: Static export (works on any static host)
+- id
+- exam
+- source
+- questionType (mcq | drag_drop)
+- question
+- explanation (optional)
+- options
+- correctAnswer
+- suggestedAnswer
+- imageUrl (optional)
+- imageAlt (optional)
+- dragDrop (for drag_drop questions)
+
+## Data Files
+
+- app/data/questions.json
+- app/data/examtopics-cad.json
+- app/data/cad-questions.json (legacy/sample dataset)
+
+Active exam/source behavior is determined by app/study-config.ts.
+
+## Adding Question Images
+
+Use public/imgs for image assets and reference them from question JSON.
+
+Example naming convention:
+
+- source-exam-questionId.jpg
+- examtopics-cad-400003.jpg
+
+Example imageUrl value in JSON:
+
+```json
+"imageUrl": "/imgs/examtopics-cad-400003.jpg"
+```
 
 ## Project Structure
 
-```
-csa-study-app/
+```text
+.
 ├── app/
 │   ├── components/
-│   │   ├── Flashcard.tsx    # Flashcard study mode
-│   │   ├── Quiz.tsx          # Quiz study mode
-│   │   └── Progress.tsx      # Progress tracking display
+│   │   ├── ExamMode.tsx
+│   │   ├── Flashcard.tsx
+│   │   ├── Progress.tsx
+│   │   └── Quiz.tsx
 │   ├── data/
-│   │   └── questions.json    # Parsed question data
-│   ├── globals.css           # Global styles
-│   ├── layout.tsx            # App layout
-│   ├── page.tsx              # Main app page
-│   └── types.ts              # TypeScript types
+│   ├── imgs/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── study-config.ts
+│   └── types.ts
+├── public/
+│   └── imgs/
 ├── package.json
-├── next.config.js            # Next.js configuration
-├── tailwind.config.js        # Tailwind configuration
 └── README.md
 ```
 
-## License
+## Notes
 
-This project is for educational purposes only. Questions are sourced from publicly available exam preparation materials.
-
-## Support
-
-Good luck with your ServiceNow CSA certification exam! 🎓
+- Progress is stored locally in the browser.
+- Exam sessions are intentionally separated from normal study feedback behavior.
+- This project is for educational use.

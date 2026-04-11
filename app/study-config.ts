@@ -1,4 +1,4 @@
-import { ExamTrack, QuestionSource, StudyMode } from './types';
+import { ExamTrack, QuestionSource, StudyMode } from "./types";
 
 export interface StudySourceConfig {
   id: QuestionSource;
@@ -12,33 +12,33 @@ export interface StudyExamConfig {
 }
 
 export const STUDY_CONFIG: Record<ExamTrack, StudyExamConfig> = {
-  'cis-df': {
-    label: 'CIS - DF',
+  cad: {
+    label: "CAD",
     sources: [
       {
-        id: 'examtopics',
-        label: 'ExamTopics',
-        modes: ['flashcard', 'quiz', 'exam'],
+        id: "examtopics",
+        label: "ExamTopics",
+        modes: ["flashcard", "quiz", "exam"],
       },
+      // {
+      //   id: "kyle",
+      //   label: "Kyle's Source",
+      //   modes: ["flashcard", "quiz"],
+      // },
+      // {
+      //   id: "all",
+      //   label: "Mix All Sources",
+      //   modes: ["flashcard", "quiz", "exam"],
+      // },
     ],
   },
-  cad: {
-    label: 'CAD',
+  "cis-df": {
+    label: "CIS - DF",
     sources: [
       {
-        id: 'examtopics',
-        label: 'ExamTopics',
-        modes: ['flashcard', 'quiz', 'exam'],
-      },
-      {
-        id: 'kyle',
-        label: "Kyle's Source",
-        modes: ['flashcard', 'quiz'],
-      },
-      {
-        id: 'all',
-        label: 'Mix All Sources',
-        modes: ['flashcard', 'quiz', 'exam'],
+        id: "examtopics",
+        label: "ExamTopics",
+        modes: ["flashcard", "quiz", "exam"],
       },
     ],
   },

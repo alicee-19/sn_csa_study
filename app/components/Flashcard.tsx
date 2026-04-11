@@ -327,10 +327,10 @@ export default function Flashcard({
             </div>
             <div className='mt-4 pt-4 border-t border-green-200'>
               <p className='text-xs sm:text-sm text-gray-500 mb-2'>
-                Original question:
+                {current.explanation ? "Explanation:" : "Original question:"}
               </p>
               <p className='text-sm sm:text-base text-gray-700 italic whitespace-pre-line'>
-                {current.question}
+                {current.explanation || current.question}
               </p>
             </div>
           </div>

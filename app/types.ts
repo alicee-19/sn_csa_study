@@ -3,6 +3,7 @@ export interface Question {
   questionNumber: number;
   topic: number;
   question: string;
+  explanation?: string;
   exam?: ExamTrack;
   source?: QuestionDataSource;
   questionType?: QuestionType;
@@ -30,9 +31,9 @@ export interface StudyProgress {
   };
 }
 
-export type StudyMode = 'flashcard' | 'quiz' | 'exam';
-export type QuestionFilter = 'all' | 'failed' | 'random';
-export type ExamTrack = 'cis-df' | 'cad';
-export type QuestionType = 'mcq' | 'drag_drop';
-export type QuestionDataSource = 'examtopics' | 'kyle';
-export type QuestionSource = QuestionDataSource | 'all';
+export type StudyMode = "flashcard" | "quiz" | "exam";
+export type QuestionFilter = "all" | "failed" | "random";
+export type ExamTrack = "cis-df" | "cad";
+export type QuestionType = "mcq" | "drag_drop";
+export type QuestionDataSource = "examtopics" | "kyle";
+export type QuestionSource = QuestionDataSource | "all";

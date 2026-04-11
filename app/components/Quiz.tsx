@@ -62,7 +62,7 @@ export default function Quiz({
     return (
       <div className='bg-white rounded-lg shadow-md p-6 sm:p-8'>
         <h2 className='text-2xl sm:text-3xl font-bold text-gray-800 mb-4'>
-          {testMode ? 'Test Complete!' : 'Quiz Complete!'}
+          {testMode ? "Test Complete!" : "Quiz Complete!"}
         </h2>
         <div className='mb-6'>
           <div className='text-5xl sm:text-6xl font-bold text-center my-6 sm:my-8 text-blue-600'>
@@ -85,33 +85,54 @@ export default function Quiz({
             </h3>
             <div className='space-y-4'>
               {questions.map((question, index) => {
-                const key = question.progressKey || `${question.exam}-${question.id}`;
-                const selectedAnswer = testSelections[key] || '(No answer)';
+                const key =
+                  question.progressKey || `${question.exam}-${question.id}`;
+                const selectedAnswer = testSelections[key] || "(No answer)";
                 const dragSelection = testDragSelections[key] || {};
 
                 return (
-                  <div key={key} className='p-3 border border-gray-200 rounded-md bg-white'>
+                  <div
+                    key={key}
+                    className='p-3 border border-gray-200 rounded-md bg-white'
+                  >
                     <p className='text-sm font-semibold text-gray-700 mb-2 whitespace-pre-line'>
                       Q{index + 1}. {question.question}
                     </p>
-                    {question.questionType === 'drag_drop' && question.dragDrop ? (
+                    {question.questionType === "drag_drop" &&
+                    question.dragDrop ? (
                       <div className='text-sm text-gray-700 space-y-1'>
-                        <p className='font-medium text-gray-800'>Your mapping:</p>
+                        <p className='font-medium text-gray-800'>
+                          Your mapping:
+                        </p>
                         {question.dragDrop.columnB.map((target) => {
                           const leftId = dragSelection[target.id];
-                          const leftText = question.dragDrop?.columnA.find((item) => item.id === leftId)?.text;
+                          const leftText = question.dragDrop?.columnA.find(
+                            (item) => item.id === leftId
+                          )?.text;
                           return (
-                            <p key={`your-${target.id}`} className='whitespace-pre-line'>
-                              - {target.text}: {leftText || '(No match)'}
+                            <p
+                              key={`your-${target.id}`}
+                              className='whitespace-pre-line'
+                            >
+                              - {target.text}: {leftText || "(No match)"}
                             </p>
                           );
                         })}
-                        <p className='font-medium text-gray-800 mt-2'>Correct mapping:</p>
+                        <p className='font-medium text-gray-800 mt-2'>
+                          Correct mapping:
+                        </p>
                         {question.dragDrop.correctMatches.map((match) => {
-                          const leftText = question.dragDrop?.columnA.find((item) => item.id === match.leftId)?.text;
-                          const rightText = question.dragDrop?.columnB.find((item) => item.id === match.rightId)?.text;
+                          const leftText = question.dragDrop?.columnA.find(
+                            (item) => item.id === match.leftId
+                          )?.text;
+                          const rightText = question.dragDrop?.columnB.find(
+                            (item) => item.id === match.rightId
+                          )?.text;
                           return (
-                            <p key={`correct-${match.leftId}-${match.rightId}`} className='whitespace-pre-line'>
+                            <p
+                              key={`correct-${match.leftId}-${match.rightId}`}
+                              className='whitespace-pre-line'
+                            >
                               - {rightText}: {leftText}
                             </p>
                           );
@@ -120,7 +141,9 @@ export default function Quiz({
                     ) : (
                       <div className='text-sm text-gray-700 space-y-1'>
                         <p>Your answer: {selectedAnswer}</p>
-                        <p className='font-medium text-gray-800'>Correct answer: {question.correctAnswer}</p>
+                        <p className='font-medium text-gray-800'>
+                          Correct answer: {question.correctAnswer}
+                        </p>
                       </div>
                     )}
                   </div>
@@ -209,7 +232,7 @@ export default function Quiz({
         setTestSelections((prev) => ({
           ...prev,
           [current.progressKey || `${current.exam}-${current.id}`]:
-            selectedSet || '(No answer)',
+            selectedSet || "(No answer)",
         }));
       }
     }
@@ -325,8 +348,8 @@ export default function Quiz({
                 if (showResult) {
                   if (testMode) {
                     className += isSelected
-                      ? 'border-blue-500 bg-blue-50 opacity-90'
-                      : 'border-gray-200 bg-gray-50 opacity-70';
+                      ? "border-blue-500 bg-blue-50 opacity-90"
+                      : "border-gray-200 bg-gray-50 opacity-70";
                   } else {
                     if (isCorrectAnswer) {
                       className += "border-green-500 bg-green-50";
@@ -450,10 +473,10 @@ export default function Quiz({
                         className={`p-3 border-2 rounded-md ${
                           showResult
                             ? testMode
-                              ? 'border-gray-300 bg-gray-50'
+                              ? "border-gray-300 bg-gray-50"
                               : isCorrectMatch
-                                ? "border-green-500 bg-green-50"
-                                : "border-red-500 bg-red-50"
+                              ? "border-green-500 bg-green-50"
+                              : "border-red-500 bg-red-50"
                             : "border-dashed border-gray-300 bg-gray-50"
                         }`}
                       >
@@ -509,11 +532,11 @@ export default function Quiz({
             {testMode ? (
               <div className='p-4 bg-blue-50 border border-blue-300 rounded-md'>
                 <p className='font-semibold text-blue-800'>
-                  Answer submitted. Correct answers will be shown after the test ends.
+                  Answer submitted. Correct answers will be shown after the test
+                  ends.
                 </p>
               </div>
             ) : (
-              (
                 isDragDropQuestion
                   ? current.dragDrop?.correctMatches.every(
                       (match) => dragAssignments[match.rightId] === match.leftId
@@ -521,21 +544,22 @@ export default function Quiz({
                   : selectedAnswers.sort().join("") ===
                     current.correctAnswer.split("").sort().join("")
               ) ? (
-                <div className='p-4 bg-green-50 border border-green-500 rounded-md'>
-                  <p className='font-semibold text-green-800'>
-                    Correct! Great job!
-                  </p>
-                </div>
-              ) : (
-                <div className='p-4 bg-red-50 border border-red-500 rounded-md'>
-                  <p className='font-semibold text-red-800'>
-                    Incorrect.
-                    {isDragDropQuestion
-                      ? " Review the highlighted matches in Column B."
-                      : ` The correct answer is ${current.correctAnswer}.`}
-                  </p>
-                </div>
-              )
+              <div className='p-4 bg-green-50 border border-green-500 rounded-md'>
+                <p className='font-semibold text-green-800'>
+                  {current.explanation || "Correct! Great job!"}
+                </p>
+              </div>
+            ) : (
+              <div className='p-4 bg-red-50 border border-red-500 rounded-md'>
+                <p className='font-semibold text-red-800'>
+                  {current.explanation ||
+                    `Incorrect.${
+                      isDragDropQuestion
+                        ? " Review the highlighted matches in Column B."
+                        : ` The correct answer is ${current.correctAnswer}.`
+                    }`}
+                </p>
+              </div>
             )}
             <button
               onClick={handleNext}

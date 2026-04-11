@@ -66,6 +66,7 @@
     "questionNumber": 3,
     "topic": 1,
     "question": "To see what scripts, reports, and other application artifacts will be in a published application:",
+    "explanation": "Use the Application Files related list to review exactly which records and artifacts are included in the app before publishing.",
     "imageUrl": "",
     "imageAlt": "Optional CAD question image",
     "options": [
