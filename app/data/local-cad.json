@@ -6,12 +6,12 @@
     "questionNumber": 1,
     "topic": 1,
     "question": "How to test in tablet mode?",
-    "imageUrl": "/imgs/examtopics-cad-1.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Switch to Tablet Mode using URL",
-    "explanation": "Tablet Development-> Switch to Tablet Mode.\n(https://your-instance.service-now.com/$tablet.do)."
+    "explanation": "Tablet Development->Switch to Tablet Mode.\n(https://your-instance.service-now.com/$tablet.do)."
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
     "questionNumber": 2,
     "topic": 1,
     "question": "Which one is true about UI Policy?",
-    "imageUrl": "/imgs/examtopics-cad-2.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [
       {
@@ -47,7 +47,7 @@
     "questionNumber": 3,
     "topic": 1,
     "question": "Script action only trigger by Events",
-    "imageUrl": "/imgs/examtopics-cad-3.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [
       {
@@ -61,7 +61,7 @@
     ],
     "correctAnswer": "A",
     "suggestedAnswer": "A",
-    "explanation": "Script actions are triggered by events only.\nThey perform server-side tasks."
+    "explanation": "Script actions are triggered by events only."
   },
   {
     "id": 4,
@@ -70,7 +70,7 @@
     "questionNumber": 4,
     "topic": 1,
     "question": "What is not true about Email notifications?",
-    "imageUrl": "/imgs/examtopics-cad-4.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [
       {
@@ -92,7 +92,7 @@
     ],
     "correctAnswer": "D",
     "suggestedAnswer": "D",
-    "explanation": "Includes What, When, Who, not How."
+    "explanation": "Email notification setup includes What, When, Who."
   },
   {
     "id": 5,
@@ -101,7 +101,7 @@
     "questionNumber": 5,
     "topic": 1,
     "question": "REST endpoint mean?",
-    "imageUrl": "/imgs/examtopics-cad-5.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
@@ -111,113 +111,229 @@
   {
     "id": 6,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 6,
     "topic": 1,
-    "question": "Question 6",
-    "imageUrl": "/imgs/examtopics-cad-6.png",
+    "question": "What is not correct about position of UI Action?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Form button"
+      },
+      {
+        "letter": "B",
+        "text": "Form choice"
+      },
+      {
+        "letter": "C",
+        "text": "List banner button"
+      },
+      {
+        "letter": "D",
+        "text": "List choice"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
     "id": 7,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 7,
     "topic": 1,
-    "question": "Question 7",
-    "imageUrl": "/imgs/examtopics-cad-7.png",
+    "question": "Can Script action access previous value?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "options": [
+      {
+        "letter": "A",
+        "text": "False"
+      },
+      {
+        "letter": "B",
+        "text": "True"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
+    "explanation": "Script Action has event and current only."
   },
   {
     "id": 8,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 8,
     "topic": 1,
-    "question": "Question 8",
-    "imageUrl": "/imgs/examtopics-cad-8.png",
+    "question": "Which Module link type opens Record Producer UI form?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "URL(arg)"
+      },
+      {
+        "letter": "B",
+        "text": "Script(arg)"
+      },
+      {
+        "letter": "C",
+        "text": "HTML(arg)"
+      },
+      {
+        "letter": "D",
+        "text": "Content page"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 9,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 9,
     "topic": 1,
-    "question": "Question 9",
-    "imageUrl": "/imgs/examtopics-cad-9.png",
+    "question": "In business Rule which method can be used?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.hasRole()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.hasExactlyRole()"
+      },
+      {
+        "letter": "C",
+        "text": "g_user.hasRole()"
+      },
+      {
+        "letter": "D",
+        "text": "g_user.hasRoleExactly(role)"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 10,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 10,
     "topic": 1,
-    "question": "Question 10",
-    "imageUrl": "/imgs/examtopics-cad-10.png",
+    "question": "Reference field ID means sys_id of reference table.",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 11,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 11,
     "topic": 1,
-    "question": "Question 11",
-    "imageUrl": "/imgs/examtopics-cad-11.png",
+    "question": "In business Rule how to get userId?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.getUserID()"
+      },
+      {
+        "letter": "B",
+        "text": "g_form.getUserId()"
+      },
+      {
+        "letter": "C",
+        "text": "g_user.getUserId()"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 12,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 12,
     "topic": 1,
-    "question": "Question 12",
-    "imageUrl": "/imgs/examtopics-cad-12.png",
+    "question": "Method can be used in ACL",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "g_user.hasRole() & current.isNewRecord()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.hasRole() & current.isNewRecord()"
+      },
+      {
+        "letter": "C",
+        "text": "gs.hasRole() & current.isNew()"
+      },
+      {
+        "letter": "D",
+        "text": "g_user.hasRole() & current.isNew()"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
     "id": 13,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 13,
     "topic": 1,
-    "question": "Question 13",
-    "imageUrl": "/imgs/examtopics-cad-13.png",
+    "question": "objects CANNOT be used in Script action",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "current"
+      },
+      {
+        "letter": "B",
+        "text": "previous"
+      },
+      {
+        "letter": "C",
+        "text": "event"
+      },
+      {
+        "letter": "D",
+        "text": "GlideRecord"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
@@ -226,68 +342,136 @@
     "questionType": "information",
     "questionNumber": 14,
     "topic": 1,
-    "question": "Question 14",
-    "imageUrl": "/imgs/examtopics-cad-14.png",
+    "question": "Characteristics of record producer",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Create task-based records",
+    "explanation": "Used to create task-based records via catalog UI."
   },
   {
     "id": 15,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 15,
     "topic": 1,
-    "question": "Question 15",
+    "question": "Which application Access fields affected when Can Read not selected",
     "imageUrl": "/imgs/examtopics-cad-15.png",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Can Create, Can Update, Can Delete"
+      },
+      {
+        "letter": "B",
+        "text": "Allow access via web service"
+      },
+      {
+        "letter": "C",
+        "text": "Allow configuration"
+      },
+      {
+        "letter": "D",
+        "text": "Not affected"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 16,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 16,
     "topic": 1,
-    "question": "Question 16",
-    "imageUrl": "/imgs/examtopics-cad-16.png",
+    "question": "Which one is true about application access config?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Other scope can delete"
+      },
+      {
+        "letter": "B",
+        "text": "Only this scope can delete"
+      },
+      {
+        "letter": "C",
+        "text": ""
+      },
+      {
+        "letter": "D",
+        "text": ""
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
     "id": 17,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 17,
     "topic": 1,
-    "question": "Question 17",
-    "imageUrl": "/imgs/examtopics-cad-17.png",
+    "question": "Which database operation cannot be affected by Application Access",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "update"
+      },
+      {
+        "letter": "B",
+        "text": "delete"
+      },
+      {
+        "letter": "C",
+        "text": "query"
+      },
+      {
+        "letter": "D",
+        "text": "create"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C",
     "explanation": ""
   },
   {
     "id": 18,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 18,
     "topic": 1,
-    "question": "Question 18",
-    "imageUrl": "/imgs/examtopics-cad-18.png",
+    "question": "How to create report in Homepage",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gadgets"
+      },
+      {
+        "letter": "B",
+        "text": "Gauges"
+      },
+      {
+        "letter": "C",
+        "text": "Catalog"
+      },
+      {
+        "letter": "D",
+        "text": "Tag"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
@@ -296,13 +480,13 @@
     "questionType": "information",
     "questionNumber": 19,
     "topic": 1,
-    "question": "Question 19",
+    "question": "Search below means:",
     "imageUrl": "/imgs/examtopics-cad-19.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Assigned to current user",
+    "explanation": "Assigned to is current logged user."
   },
   {
     "id": 20,
@@ -310,13 +494,13 @@
     "questionType": "information",
     "questionNumber": 20,
     "topic": 1,
-    "question": "Question 20",
-    "imageUrl": "/imgs/examtopics-cad-20.png",
+    "question": "Purpose of Team Exclusion Policy",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Exclude files from tracking",
+    "explanation": "Exclude certain files from change tracking."
   },
   {
     "id": 21,
@@ -324,13 +508,13 @@
     "questionType": "information",
     "questionNumber": 21,
     "topic": 1,
-    "question": "Question 21",
+    "question": "What is Module link Type?",
     "imageUrl": "/imgs/examtopics-cad-21.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Defines link behavior",
+    "explanation": "Specifies what type of link module opens."
   },
   {
     "id": 22,
@@ -338,54 +522,93 @@
     "questionType": "information",
     "questionNumber": 22,
     "topic": 1,
-    "question": "Question 22",
-    "imageUrl": "/imgs/examtopics-cad-22.png",
+    "question": "What don’t need schedule job?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Manual tasks",
+    "explanation": "Scheduled jobs automate recurring tasks."
   },
   {
     "id": 23,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 23,
     "topic": 1,
-    "question": "Question 23",
-    "imageUrl": "/imgs/examtopics-cad-23.png",
+    "question": "ACL visibility scenario 1",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All except field3"
+      },
+      {
+        "letter": "B",
+        "text": "All fields"
+      },
+      {
+        "letter": "C",
+        "text": "Only field3"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 24,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 24,
     "topic": 1,
-    "question": "Question 24",
-    "imageUrl": "/imgs/examtopics-cad-24.png",
+    "question": "ACL visibility scenario 2",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "All except field3"
+      },
+      {
+        "letter": "B",
+        "text": "All fields"
+      },
+      {
+        "letter": "C",
+        "text": "Only field3"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C",
     "explanation": ""
   },
   {
     "id": 25,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 25,
     "topic": 1,
-    "question": "Question 25",
-    "imageUrl": "/imgs/examtopics-cad-25.png",
+    "question": "Can inherited field be deleted?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yes text"
+      },
+      {
+        "letter": "B",
+        "text": "Yes no data"
+      },
+      {
+        "letter": "C",
+        "text": "No"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C",
     "explanation": ""
   },
   {
@@ -394,13 +617,13 @@
     "questionType": "information",
     "questionNumber": 26,
     "topic": 1,
-    "question": "Question 26",
+    "question": "What the document Feed?",
     "imageUrl": "/imgs/examtopics-cad-26.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Live feed for record",
+    "explanation": "Allows posting messages linked to record."
   },
   {
     "id": 27,
@@ -408,13 +631,13 @@
     "questionType": "information",
     "questionNumber": 27,
     "topic": 1,
-    "question": "Question 27",
+    "question": "Parts of Form Design",
     "imageUrl": "/imgs/examtopics-cad-27.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Header, navigator, layout",
+    "explanation": "Includes UI sections."
   },
   {
     "id": 28,
@@ -422,82 +645,163 @@
     "questionType": "information",
     "questionNumber": 28,
     "topic": 1,
-    "question": "Question 28",
-    "imageUrl": "/imgs/examtopics-cad-28.png",
+    "question": "Global variables in Business Rule",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "current, previous, gs, g_scratchpad",
+    "explanation": "Standard BR variables."
   },
   {
     "id": 29,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 29,
     "topic": 1,
-    "question": "Question 29",
-    "imageUrl": "/imgs/examtopics-cad-29.png",
+    "question": "g_user.hasRole returns?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True for current user"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      },
+      {
+        "letter": "C",
+        "text": "True if role exists"
+      }
+    ],
+    "correctAnswer": "C",
+    "suggestedAnswer": "C",
     "explanation": ""
   },
   {
     "id": 30,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 30,
     "topic": 1,
-    "question": "Question 30",
-    "imageUrl": "/imgs/examtopics-cad-30.png",
+    "question": "How can get Application property?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "gs.getProperty()"
+      },
+      {
+        "letter": "B",
+        "text": "gs.getAppProperty()"
+      },
+      {
+        "letter": "C",
+        "text": "g_form.getProperty()"
+      },
+      {
+        "letter": "D",
+        "text": "g_form.getAppProperty()"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 31,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 31,
     "topic": 1,
-    "question": "Question 31",
-    "imageUrl": "/imgs/examtopics-cad-31.png",
+    "question": "Which one NOT REST method?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PUT"
+      },
+      {
+        "letter": "B",
+        "text": "GET"
+      },
+      {
+        "letter": "C",
+        "text": "PATCH"
+      },
+      {
+        "letter": "D",
+        "text": "COPY"
+      }
+    ],
+    "correctAnswer": "D",
+    "suggestedAnswer": "D",
     "explanation": ""
   },
   {
     "id": 32,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 32,
     "topic": 1,
-    "question": "Question 32",
-    "imageUrl": "/imgs/examtopics-cad-32.png",
+    "question": "Which is not report type?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chart"
+      },
+      {
+        "letter": "B",
+        "text": "Pyramid"
+      },
+      {
+        "letter": "C",
+        "text": "Funnel"
+      },
+      {
+        "letter": "D",
+        "text": "Trend"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
     "id": 33,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 33,
     "topic": 1,
-    "question": "Question 33",
-    "imageUrl": "/imgs/examtopics-cad-33.png",
+    "question": "Utility for matching import fields",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transform Maps"
+      },
+      {
+        "letter": "B",
+        "text": "Auto Map Matching Fields"
+      },
+      {
+        "letter": "C",
+        "text": "CI Relationship Builder"
+      },
+      {
+        "letter": "D",
+        "text": "BSM Map"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
@@ -506,13 +810,13 @@
     "questionType": "information",
     "questionNumber": 34,
     "topic": 1,
-    "question": "Question 34",
-    "imageUrl": "/imgs/examtopics-cad-34.png",
+    "question": "How many menus can be created?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "1",
+    "explanation": "Only one menu per app."
   },
   {
     "id": 35,
@@ -520,26 +824,35 @@
     "questionType": "information",
     "questionNumber": 35,
     "topic": 1,
-    "question": "Question 35",
-    "imageUrl": "/imgs/examtopics-cad-35.png",
+    "question": "Access Controls created with Create",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Read Write Create Delete",
+    "explanation": "Default ACLs."
   },
   {
     "id": 36,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 36,
     "topic": 1,
-    "question": "Question 36",
-    "imageUrl": "/imgs/examtopics-cad-36.png",
+    "question": "User role auto created?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "suggestedAnswer": "A",
     "explanation": ""
   },
   {
@@ -548,13 +861,13 @@
     "questionType": "information",
     "questionNumber": 37,
     "topic": 1,
-    "question": "Question 37",
-    "imageUrl": "/imgs/examtopics-cad-37.png",
+    "question": "What is web-service?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "HTTP communication",
+    "explanation": "Allows systems to communicate."
   },
   {
     "id": 38,
@@ -562,13 +875,13 @@
     "questionType": "information",
     "questionNumber": 38,
     "topic": 1,
-    "question": "Question 38",
-    "imageUrl": "/imgs/examtopics-cad-38.png",
+    "question": "What is ServiceNow store?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "App marketplace",
+    "explanation": "Provides apps."
   },
   {
     "id": 39,
@@ -576,13 +889,13 @@
     "questionType": "information",
     "questionNumber": 39,
     "topic": 1,
-    "question": "Question 39",
-    "imageUrl": "/imgs/examtopics-cad-39.png",
+    "question": "ServiceNow requesting web service is?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Consumer",
+    "explanation": "Acts as consumer."
   },
   {
     "id": 40,
@@ -590,13 +903,13 @@
     "questionType": "information",
     "questionNumber": 40,
     "topic": 1,
-    "question": "Question 40",
-    "imageUrl": "/imgs/examtopics-cad-40.png",
+    "question": "Fastest way to create Record Producer?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "From table",
+    "explanation": "Create from table."
   },
   {
     "id": 41,
@@ -604,13 +917,13 @@
     "questionType": "information",
     "questionNumber": 41,
     "topic": 1,
-    "question": "Question 41",
-    "imageUrl": "/imgs/examtopics-cad-41.png",
+    "question": "Record Producer used for?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Create records",
+    "explanation": "Task-based records."
   },
   {
     "id": 42,
@@ -618,13 +931,13 @@
     "questionType": "information",
     "questionNumber": 42,
     "topic": 1,
-    "question": "Question 42",
-    "imageUrl": "/imgs/examtopics-cad-42.png",
+    "question": "What can trigger workflow?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "BR, table events",
+    "explanation": "Triggered by events."
   },
   {
     "id": 43,
@@ -632,40 +945,66 @@
     "questionType": "information",
     "questionNumber": 43,
     "topic": 1,
-    "question": "Question 43",
-    "imageUrl": "/imgs/examtopics-cad-43.png",
+    "question": "What is workflow context?",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Instance of workflow",
+    "explanation": "Created per record."
   },
   {
     "id": 44,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 44,
     "topic": 1,
-    "question": "Question 44",
-    "imageUrl": "/imgs/examtopics-cad-44.png",
+    "question": "Which script not always server-side?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Business Rule"
+      },
+      {
+        "letter": "B",
+        "text": "UI Action"
+      },
+      {
+        "letter": "C",
+        "text": "Script Includes"
+      },
+      {
+        "letter": "D",
+        "text": "Script Action"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
     "id": 45,
     "exam": "cad",
-    "questionType": "information",
+    "questionType": "mcq",
     "questionNumber": 45,
     "topic": 1,
-    "question": "Question 45",
-    "imageUrl": "/imgs/examtopics-cad-45.png",
+    "question": "Datetime API in scoped app?",
+    "imageUrl": "",
     "imageAlt": "",
-    "options": [],
-    "correctAnswer": "",
-    "suggestedAnswer": "",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GlideSystem"
+      },
+      {
+        "letter": "B",
+        "text": "GlideDateTime"
+      }
+    ],
+    "correctAnswer": "B",
+    "suggestedAnswer": "B",
     "explanation": ""
   },
   {
@@ -674,13 +1013,13 @@
     "questionType": "information",
     "questionNumber": 46,
     "topic": 1,
-    "question": "Question 46",
-    "imageUrl": "/imgs/examtopics-cad-46.png",
+    "question": "Chart from List",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Pie, Bar",
+    "explanation": "Supported charts."
   },
   {
     "id": 47,
@@ -688,12 +1027,12 @@
     "questionType": "information",
     "questionNumber": 47,
     "topic": 1,
-    "question": "Question 47",
-    "imageUrl": "/imgs/examtopics-cad-47.png",
+    "question": "Incorrect Form Design action",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
-    "suggestedAnswer": "",
-    "explanation": ""
+    "suggestedAnswer": "Dragging section from Field Types is wrong",
+    "explanation": "Cannot drag section from Field Types."
   }
 ]
