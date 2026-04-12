@@ -22,6 +22,9 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
   const [activeDraggedItem, setActiveDraggedItem] = useState<string | null>(
     null
   );
+  const [selectedLeftItem, setSelectedLeftItem] = useState<string | null>(
+    null
+  );
   const [score, setScore] = useState(0);
   const [answers, setAnswers] = useState<Record<string, ExamAnswer>>({});
   const [results, setResults] = useState<Record<string, boolean>>({});
@@ -31,6 +34,7 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
     setSelectedAnswers([]);
     setDragAssignments({});
     setActiveDraggedItem(null);
+    setSelectedLeftItem(null);
     setScore(0);
     setAnswers({});
     setResults({});
@@ -216,6 +220,7 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
     setSelectedAnswers([]);
     setDragAssignments({});
     setActiveDraggedItem(null);
+    setSelectedLeftItem(null);
   };
 
   const handleSelectAnswer = (letter: string) => {
@@ -235,21 +240,30 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
 
   const handleDragStart = (leftId: string) => {
     setActiveDraggedItem(leftId);
+    setSelectedLeftItem(leftId);
+  };
+
+  const handleSelectLeftItem = (leftId: string) => {
+    const isUsed = Object.values(dragAssignments).includes(leftId);
+    if (isUsed) return;
+    setSelectedLeftItem((prev) => (prev === leftId ? null : leftId));
   };
 
   const handleDropOnRight = (rightId: string) => {
-    if (!activeDraggedItem) return;
+    const sourceLeftId = activeDraggedItem || selectedLeftItem;
+    if (!sourceLeftId) return;
     setDragAssignments((prev) => {
       const next = { ...prev };
       Object.keys(next).forEach((key) => {
-        if (next[key] === activeDraggedItem) {
+        if (next[key] === sourceLeftId) {
           delete next[key];
         }
       });
-      next[rightId] = activeDraggedItem;
+      next[rightId] = sourceLeftId;
       return next;
     });
     setActiveDraggedItem(null);
+    setSelectedLeftItem(null);
   };
 
   const clearAssignment = (rightId: string) => {
@@ -338,6 +352,7 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
             <div className='mb-4 p-3 bg-blue-50 border border-blue-200 rounded-md'>
               <p className='text-sm text-blue-800'>
                 Drag one item from Column A into each matching row in Column B.
+                On mobile, tap an item in Column A, then tap a row in Column B.
               </p>
             </div>
           )}
@@ -412,15 +427,19 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
                     const isUsed = Object.values(dragAssignments).includes(
                       item.id
                     );
+                    const isSelected = selectedLeftItem === item.id;
                     return (
                       <div
                         key={item.id}
                         draggable={!isUsed}
                         onDragStart={() => handleDragStart(item.id)}
+                        onClick={() => handleSelectLeftItem(item.id)}
                         className={`p-3 border rounded-md text-sm ${
                           isUsed
                             ? "bg-gray-100 text-gray-400 border-gray-200"
-                            : "bg-white border-gray-300 cursor-grab"
+                            : isSelected
+                            ? "bg-blue-50 border-blue-400 cursor-pointer"
+                            : "bg-white border-gray-300 cursor-pointer md:cursor-grab"
                         }`}
                       >
                         <span className='whitespace-pre-line'>{item.text}</span>
@@ -445,6 +464,7 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
                         key={target.id}
                         onDragOver={(event) => event.preventDefault()}
                         onDrop={() => handleDropOnRight(target.id)}
+                        onClick={() => handleDropOnRight(target.id)}
                         className='p-3 border-2 rounded-md border-dashed border-gray-300 bg-gray-50'
                       >
                         <p className='text-xs text-gray-500 mb-1 whitespace-pre-line'>
@@ -456,7 +476,10 @@ export default function ExamMode({ questions, onComplete }: ExamModeProps) {
                               {assignedLeft.text}
                             </span>
                             <button
-                              onClick={() => clearAssignment(target.id)}
+                              onClick={(event) => {
+                                event.stopPropagation();
+                                clearAssignment(target.id);
+                              }}
                               className='text-xs text-red-500 hover:text-red-700'
                             >
                               Clear
