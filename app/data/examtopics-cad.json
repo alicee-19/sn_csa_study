@@ -537,7 +537,7 @@
     "questionNumber": 18,
     "topic": 1,
     "question": "Here is the Business Rule script template:\nThis type of JavaScript function is known as:",
-    "imageUrl": "",
+    "imageUrl": "/imgs/examtopics-cad-400018.jpg",
     "imageAlt": "Optional CAD question image",
     "options": [
       {
@@ -2745,7 +2745,7 @@
     "questionType": "mcq",
     "questionNumber": 89,
     "topic": 1,
-    "question": "You are developing the MyApp application that has a table, Table A. When the MyApp application is installed on an instance, you want Table A's records to be installed as part of the application.Table A's records will be installed when:",
+    "question": "You are developing the MyApp application that has a table, Table A. When the MyApp application is installed on an instance, you want Table A's records to be installed as part of the application.\nTable A's records will be installed when:",
     "imageUrl": "",
     "imageAlt": "Optional CAD question image",
     "options": [
@@ -3597,8 +3597,8 @@
     "questionType": "mcq",
     "questionNumber": 117,
     "topic": 1,
-    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:Which field or fields can a user with the itil role read?",
-    "imageUrl": "",
+    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:\nWhich field or fields can a user with the itil role read?",
+    "imageUrl": "/imgs/examtopics-cad-400117.png",
     "imageAlt": "Optional CAD question image",
     "options": [
       {
@@ -3627,8 +3627,8 @@
     "questionType": "mcq",
     "questionNumber": 118,
     "topic": 1,
-    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:Which field or fields can a user with the itil role read?",
-    "imageUrl": "",
+    "question": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table:\nWhich field or fields can a user with the itil role read?",
+    "imageUrl": "/imgs/examtopics-cad-400118.png",
     "imageAlt": "Optional CAD question image",
     "options": [
       {
@@ -3637,7 +3637,7 @@
       },
       {
         "letter": "B",
-        "text": "filed1 and field3"
+        "text": "field1 and field3"
       },
       {
         "letter": "C",
@@ -3807,7 +3807,7 @@
     "questionType": "mcq",
     "questionNumber": 124,
     "topic": 1,
-    "question": "What are the benefits of storing the majority of an Application’s server-side script logic in a Script Include?a. This makes execution faster.b. Only run when called from a script.c. The script logic can be hidden when the Application is installed from the ServiceNow Store. d. For some changes to application logic there is only one place to make edits.",
+    "question": "What are the benefits of storing the majority of an Application’s server-side script logic in a Script Include?\na. This makes execution faster.\nb. Only run when called from a script.\nc. The script logic can be hidden when the Application is installed from the ServiceNow Store. \nd. For some changes to application logic there is only one place to make edits.",
     "imageUrl": "",
     "imageAlt": "Optional CAD question image",
     "options": [
@@ -3987,7 +3987,7 @@
     "questionType": "mcq",
     "questionNumber": 130,
     "topic": 1,
-    "question": "Why create Applications in ServiceNow?a) To replace outdated, inadequate, custom business applications and processes\nb) To extend service delivery and management to all enterprise departments\nc) To allow users full access to all ServiceNow tables, records, and fields\nd) To extend the value of ServiceNow",
+    "question": "Why create Applications in ServiceNow?\na) To replace outdated, inadequate, custom business applications and processes\nb) To extend service delivery and management to all enterprise departments\nc) To allow users full access to all ServiceNow tables, records, and fields\nd) To extend the value of ServiceNow",
     "imageUrl": "",
     "imageAlt": "Optional CAD question image",
     "options": [
@@ -5119,7 +5119,7 @@
     "questionType": "mcq",
     "questionNumber": 171,
     "topic": 1,
-    "question": "An application called My App has a table, MyAppTable, with this Application Access configuration:Accessible from: All application scopesCan read: Selected -Can delete: Not selected -Allow configuration: Selected -Which of the following is true based on this configuration?",
+    "question": "An application called My App has a table, MyAppTable, with this Application Access configuration:\nAccessible from: All application scopes\nCan read: Selected -\nCan delete: Not selected -\nAllow configuration: Selected -\nWhich of the following is true based on this configuration?",
     "imageUrl": "",
     "imageAlt": "Optional CAD question image",
     "options": [

@@ -462,6 +462,9 @@ export default function Quiz({
                     const correctLeftId = current.dragDrop?.correctMatches.find(
                       (match) => match.rightId === target.id
                     )?.leftId;
+                    const correctLeft = current.dragDrop?.columnA.find(
+                      (item) => item.id === correctLeftId
+                    );
                     const isCorrectMatch =
                       !!assignedLeftId && assignedLeftId === correctLeftId;
 
@@ -499,6 +502,11 @@ export default function Quiz({
                           </div>
                         ) : (
                           <p className='text-sm text-gray-400'>Drop here</p>
+                        )}
+                        {showResult && !testMode && !isCorrectMatch && correctLeft && (
+                          <p className='mt-2 text-xs text-green-700 font-medium whitespace-pre-line'>
+                            Correct match: {correctLeft.text}
+                          </p>
                         )}
                       </div>
                     );
