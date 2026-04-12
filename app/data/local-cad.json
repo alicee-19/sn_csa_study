@@ -61,7 +61,7 @@
     ],
     "correctAnswer": "A",
     "suggestedAnswer": "A",
-    "explanation": "Script actions are triggered by events only."
+    "explanation": "You can use Script Actions to create server-side scripts that perform a variety of tasks, such as modifying a configuration item (CI), or managing failed login attempts.\nScript actions are triggered by events only."
   },
   {
     "id": 4,
@@ -92,7 +92,7 @@
     ],
     "correctAnswer": "D",
     "suggestedAnswer": "D",
-    "explanation": "Email notification setup includes What, When, Who."
+    "explanation": "Creating Email Notifications:\n- Identifying the notification.\n- Specifying when to send the notification.\n- Specifying who receives the notification.\n- Specifying what the notification contains."
   },
   {
     "id": 5,
@@ -137,7 +137,7 @@
     ],
     "correctAnswer": "B",
     "suggestedAnswer": "B",
-    "explanation": ""
+    "explanation": "You can create a UI action to provide any or all of these controls.\n- A button on a form\n- A context menu item on a form (appears when you right-click the form header)\n- A related link in a form\n- A button in the banner on top of a list\n- A button at the bottom of a list\n- A context menu item on a list (appears when you right-click the list)\n- A menu item for the action choice list at the bottom of a list\n- A related link at the bottom of a list"
   },
   {
     "id": 7,
@@ -160,7 +160,7 @@
     ],
     "correctAnswer": "A",
     "suggestedAnswer": "A",
-    "explanation": "Script Action has event and current only."
+    "explanation": "In Script Action, two additional objects are available in this script:\n- event: the sysevent that caused this to be invoked.\n- current: the record the event is scheduled on behalf of.\nScript Action does not provide previous."
   },
   {
     "id": 8,
@@ -222,7 +222,7 @@
     ],
     "correctAnswer": "A",
     "suggestedAnswer": "A",
-    "explanation": ""
+    "explanation": "gs.hasRole() is a GlideSystem method and Business Rule is server-side.\ngs.hasExactlyRole() is not a valid method name."
   },
   {
     "id": 10,
@@ -303,7 +303,7 @@
     ],
     "correctAnswer": "B",
     "suggestedAnswer": "B",
-    "explanation": ""
+    "explanation": "gs.hasRole is a method of GlideSystem and current.isNewRecord is a method of GlideRecord."
   },
   {
     "id": 13,
@@ -348,7 +348,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Create task-based records",
-    "explanation": "Used to create task-based records via catalog UI."
+    "explanation": "A record producer is a specific type of catalog item that allows end users to create task-based records from the service catalog.\nUse record producer to create task-based records only."
   },
   {
     "id": 15,
@@ -357,7 +357,7 @@
     "questionNumber": 15,
     "topic": 1,
     "question": "Which application Access fields affected when Can Read not selected",
-    "imageUrl": "/imgs/examtopics-cad-15.png",
+    "imageUrl": "/imgs/local-cad-15.png",
     "imageAlt": "",
     "options": [
       {
@@ -481,12 +481,12 @@
     "questionNumber": 19,
     "topic": 1,
     "question": "Search below means:",
-    "imageUrl": "/imgs/examtopics-cad-19.png",
+    "imageUrl": "/imgs/local-cad-19.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Assigned to current user",
-    "explanation": "Assigned to is current logged user."
+    "explanation": "Assigned to is current user id logged."
   },
   {
     "id": 20,
@@ -500,7 +500,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Exclude files from tracking",
-    "explanation": "Exclude certain files from change tracking."
+    "explanation": "Exclude certain files from change tracking by creating an exclusion policy.\nWhen a change matches an exclusion policy, the change does not generate records in the local changes list.\nThe change still generates local version records and update set records as normal."
   },
   {
     "id": 21,
@@ -509,12 +509,12 @@
     "questionNumber": 21,
     "topic": 1,
     "question": "What is Module link Type?",
-    "imageUrl": "/imgs/examtopics-cad-21.png",
+    "imageUrl": "/imgs/local-cad-21.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Defines link behavior",
-    "explanation": "Specifies what type of link module opens."
+    "explanation": "The Link type field specifies what type of link the module opens."
   },
   {
     "id": 22,
@@ -528,7 +528,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Manual tasks",
-    "explanation": "Scheduled jobs automate recurring tasks."
+    "explanation": "Scheduled jobs are automated pieces of work performed at a particular time or on a recurring schedule."
   },
   {
     "id": 23,
@@ -536,7 +536,7 @@
     "questionType": "mcq",
     "questionNumber": 23,
     "topic": 1,
-    "question": "ACL visibility scenario 1",
+    "question": "A application has a Mytable with a table A , have three field field1, field2, field3.\nTable.none can read by Amin role and itil role. \n Table.field3 can read by admin role.\nWhat itil role can see?",
     "imageUrl": "",
     "imageAlt": "",
     "options": [
@@ -563,7 +563,7 @@
     "questionType": "mcq",
     "questionNumber": 24,
     "topic": 1,
-    "question": "ACL visibility scenario 2",
+    "question": "A application has a Mytable with a table A , have three fields field1, field2, field3.\nTable.none can read by Amin role and itil role. \nTable.* can be read by Admin\n Table.field3 can read by itil role.\nWhat itil role can see?",
     "imageUrl": "",
     "imageAlt": "",
     "options": [
@@ -618,12 +618,12 @@
     "questionNumber": 26,
     "topic": 1,
     "question": "What the document Feed?",
-    "imageUrl": "/imgs/examtopics-cad-26.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Live feed for record",
-    "explanation": "Allows posting messages linked to record."
+    "explanation": "A document feed is a live feed group associated with a record, such as an incident or change.\nDocument feeds allow users to work on records through the live feed interface and post messages maintained as comments or work notes."
   },
   {
     "id": 27,
@@ -632,12 +632,12 @@
     "questionNumber": 27,
     "topic": 1,
     "question": "Parts of Form Design",
-    "imageUrl": "/imgs/examtopics-cad-27.png",
+    "imageUrl": "",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Header, navigator, layout",
-    "explanation": "Includes UI sections."
+    "explanation": "Parts include page header, field navigator, and form layout."
   },
   {
     "id": 28,
@@ -651,7 +651,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "current, previous, gs, g_scratchpad",
-    "explanation": "Standard BR variables."
+    "explanation": "Global references for Business Rule include current, previous, g_scratchpad, and gs (GlideSystem)."
   },
   {
     "id": 29,
@@ -816,7 +816,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "1",
-    "explanation": "Only one menu per app."
+    "explanation": "1"
   },
   {
     "id": 35,
@@ -830,7 +830,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Read Write Create Delete",
-    "explanation": "Default ACLs."
+    "explanation": "Read, Write, Create, Delete."
   },
   {
     "id": 36,
@@ -867,7 +867,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "HTTP communication",
-    "explanation": "Allows systems to communicate."
+    "explanation": "HTTP-based web services allow diverse applications to talk to each other.\nServiceNow supports both inbound (provider) and outbound (consumer) web services."
   },
   {
     "id": 38,
@@ -881,7 +881,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "App marketplace",
-    "explanation": "Provides apps."
+    "explanation": "ServiceNow Store delivers trusted business apps across various business lines and industries."
   },
   {
     "id": 39,
@@ -895,7 +895,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Consumer",
-    "explanation": "Acts as consumer."
+    "explanation": "Consumer."
   },
   {
     "id": 40,
@@ -923,7 +923,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Create records",
-    "explanation": "Task-based records."
+    "explanation": "A record producer allows end users to create task-based records from the service catalog.\nUse record producer to create task-based records only."
   },
   {
     "id": 42,
@@ -937,7 +937,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "BR, table events",
-    "explanation": "Triggered by events."
+    "explanation": "Business rule, table interaction, and events can trigger workflow."
   },
   {
     "id": 43,
@@ -951,7 +951,7 @@
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Instance of workflow",
-    "explanation": "Created per record."
+    "explanation": "When a record is created that matches workflow conditions, a Workflow Context is generated for that record."
   },
   {
     "id": 44,
@@ -1014,12 +1014,12 @@
     "questionNumber": 46,
     "topic": 1,
     "question": "Chart from List",
-    "imageUrl": "",
+    "imageUrl": "/imgs/local-cad-46.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Pie, Bar",
-    "explanation": "Supported charts."
+    "explanation": "Pie Chart\nBar Chart"
   },
   {
     "id": 47,
@@ -1028,11 +1028,11 @@
     "questionNumber": 47,
     "topic": 1,
     "question": "Incorrect Form Design action",
-    "imageUrl": "",
+    "imageUrl": "/imgs/local-cad-47.png",
     "imageAlt": "",
     "options": [],
     "correctAnswer": "",
     "suggestedAnswer": "Dragging section from Field Types is wrong",
-    "explanation": "Cannot drag section from Field Types."
+    "explanation": "Drag a section from Field Type tab and drop it to Form Layout to add new section is NOT correct."
   }
 ]
