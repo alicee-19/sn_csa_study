@@ -70,6 +70,7 @@ export default function Flashcard({
   }
 
   const current = questions[currentIndex];
+  const isInformationQuestion = current.questionType === "information";
   const correctAnswers = (current.correctAnswer || "").split("");
   const correctOptions = current.options.filter((opt) =>
     correctAnswers.includes(opt.letter)
@@ -192,6 +193,12 @@ export default function Flashcard({
               {current.question}
             </h2>
 
+            {isInformationQuestion && (
+              <div className='p-3 sm:p-4 border border-blue-200 rounded-md bg-blue-50 text-sm sm:text-base text-gray-800 whitespace-pre-line'>
+                {current.explanation || "No additional information provided."}
+              </div>
+            )}
+
             {current.imageUrl && (
               <div className='mb-4 border-2 border-dashed border-gray-300 rounded-md min-h-36 flex items-center justify-center bg-gray-50 overflow-hidden'>
                 <img
@@ -206,7 +213,7 @@ export default function Flashcard({
                 ({correctAnswers.length} correct answers)
               </p>
             )}
-            {isDragDropQuestion ? (
+            {!isInformationQuestion && isDragDropQuestion ? (
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
                 <div>
                   <p className='text-sm font-semibold text-gray-700 mb-2'>
@@ -239,7 +246,7 @@ export default function Flashcard({
                   </div>
                 </div>
               </div>
-            ) : (
+            ) : !isInformationQuestion ? (
               <div className='space-y-2 sm:space-y-3 mt-4'>
                 {current.options.map((option) => (
                   <div
@@ -253,7 +260,7 @@ export default function Flashcard({
                   </div>
                 ))}
               </div>
-            )}
+            ) : null}
           </div>
 
           {/* Back - Answer */}
@@ -276,7 +283,16 @@ export default function Flashcard({
               <span>Tap to flip back</span>
             </div>
             <div className='mb-6'>
-              {isDragDropQuestion ? (
+              {isInformationQuestion ? (
+                <>
+                  <p className='text-sm sm:text-base font-semibold text-green-800 mb-1'>
+                    Information
+                  </p>
+                  <div className='p-3 bg-green-100 border border-green-300 rounded-md text-sm sm:text-base text-green-900 whitespace-pre-line'>
+                    {current.explanation || current.question}
+                  </div>
+                </>
+              ) : isDragDropQuestion ? (
                 <>
                   <p className='text-sm sm:text-base font-semibold text-green-800 mb-1'>
                     Correct Mapping:
@@ -295,10 +311,14 @@ export default function Flashcard({
                           className='p-2 sm:p-3 bg-green-100 border border-green-300 rounded-md text-sm sm:text-base'
                         >
                           <span className='font-semibold text-green-900'>
-                            <span className='whitespace-pre-line'>{left?.text}</span>
+                            <span className='whitespace-pre-line'>
+                              {left?.text}
+                            </span>
                           </span>
                           <span className='mx-2 text-green-700'>→</span>
-                          <span className='text-green-900 whitespace-pre-line'>{right?.text}</span>
+                          <span className='text-green-900 whitespace-pre-line'>
+                            {right?.text}
+                          </span>
                         </div>
                       );
                     })}
@@ -325,14 +345,16 @@ export default function Flashcard({
                 </>
               )}
             </div>
-            <div className='mt-4 pt-4 border-t border-green-200'>
-              <p className='text-xs sm:text-sm text-gray-500 mb-2'>
-                {current.explanation ? "Explanation:" : "Original question:"}
-              </p>
-              <p className='text-sm sm:text-base text-gray-700 italic whitespace-pre-line'>
-                {current.explanation || current.question}
-              </p>
-            </div>
+            {!isInformationQuestion && (
+              <div className='mt-4 pt-4 border-t border-green-200'>
+                <p className='text-xs sm:text-sm text-gray-500 mb-2'>
+                  {current.explanation ? "Explanation:" : "Original question:"}
+                </p>
+                  <p className='text-sm sm:text-base text-gray-700 italic whitespace-pre-line'>
+                    {current.explanation || current.question}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

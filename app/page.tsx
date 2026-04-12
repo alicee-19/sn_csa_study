@@ -14,9 +14,9 @@ import {
   QuestionSource,
 } from "./types";
 import { STUDY_CONFIG } from "./study-config";
-import cisDfQuestionsData from "./data/questions.json";
+import cisDfQuestionsData from "./data/examtopics-cis-df.json";
 import examtopicsCadQuestionsData from "./data/examtopics-cad.json";
-//import kyleCadQuestionsData from './data/kyle-cad.json';
+import localCadQuestionsData from "./data/local-cad.json";
 
 export default function Home() {
   const [selectedExam, setSelectedExam] = useState<ExamTrack>("cad");
@@ -71,12 +71,23 @@ export default function Home() {
   const normalizeQuestions = (
     sourceQuestions: Question[],
     fallbackExam: ExamTrack,
-    source: "examtopics" | "kyle"
+    source: "examtopics" | "local"
   ): Question[] => {
     return sourceQuestions.map((question) => {
       const exam = question.exam ?? fallbackExam;
+      const rawQuestionType = (question as { questionType?: string })
+        .questionType;
+      const hasNoMcqContent =
+        (!question.options || question.options.length === 0) &&
+        !question.correctAnswer;
       const questionType =
-        question.questionType ?? (question.dragDrop ? "drag_drop" : "mcq");
+        rawQuestionType === "information" || rawQuestionType === "info"
+          ? "information"
+          : rawQuestionType === "drag_drop" || question.dragDrop
+          ? "drag_drop"
+          : hasNoMcqContent
+          ? "information"
+          : "mcq";
       return {
         ...question,
         explanation: question.explanation || "",
@@ -95,12 +106,15 @@ export default function Home() {
         "cad",
         "examtopics"
       );
-      //const kyle = normalizeQuestions(kyleCadQuestionsData as Question[], 'cad', 'kyle');
+      const local = normalizeQuestions(
+        localCadQuestionsData as Question[],
+        "cad",
+        "local"
+      );
 
       if (selectedSource === "examtopics") return examtopics;
-      //if (selectedSource === 'kyle') return kyle;
-      //return [...examtopics, ...kyle];
-      return [...examtopics];
+      if (selectedSource === "local") return local;
+      return [...examtopics, ...local];
     }
 
     const cisExamtopics = normalizeQuestions(
@@ -108,7 +122,6 @@ export default function Home() {
       "cis-df",
       "examtopics"
     );
-    if (selectedSource === "kyle") return [];
     return cisExamtopics;
   };
 
@@ -153,11 +166,21 @@ export default function Home() {
   };
 
   const getFilteredQuestions = (
+    studyMode: StudyMode = mode,
     studyFilter: QuestionFilter = filter,
     studyRandomCount: number = randomCount,
     studyShuffleEnabled: boolean = shuffleEnabled
   ): Question[] => {
     let filtered = [...questions];
+
+    // Information cards are available only in flashcard mode.
+    if (studyMode === "quiz" || studyMode === "exam") {
+      filtered = filtered.filter((q) => q.questionType !== "information");
+    }
+
+    if (studyMode === "flashcard" && studyFilter === "information") {
+      filtered = filtered.filter((q) => q.questionType === "information");
+    }
 
     if (studyFilter === "failed") {
       filtered = filtered.filter((q) => {
@@ -182,16 +205,22 @@ export default function Home() {
   const getExamQuestions = (
     studyExamQuestionCount = examQuestionCount
   ): Question[] => {
+    const examEligible = questions.filter(
+      (q) => q.questionType !== "information"
+    );
     const count = Math.max(
       1,
-      Math.min(studyExamQuestionCount, questions.length)
+      Math.min(studyExamQuestionCount, examEligible.length)
     );
-    return shuffleArray([...questions]).slice(0, count);
+    return shuffleArray([...examEligible]).slice(0, count);
   };
 
   const applyStudySettings = () => {
     const nextMode = draftMode;
-    const nextFilter = draftFilter;
+    const nextFilter =
+      nextMode === "flashcard" || draftFilter !== "information"
+        ? draftFilter
+        : "all";
     const nextRandomCount = draftRandomCount;
     const nextShuffleEnabled = draftShuffleEnabled;
 
@@ -202,7 +231,12 @@ export default function Home() {
     setFilteredQuestions(
       nextMode === "exam"
         ? getExamQuestions(examQuestionCount)
-        : getFilteredQuestions(nextFilter, nextRandomCount, nextShuffleEnabled)
+        : getFilteredQuestions(
+            nextMode,
+            nextFilter,
+            nextRandomCount,
+            nextShuffleEnabled
+          )
     );
     setShowSettings(false);
   };
@@ -386,6 +420,18 @@ export default function Home() {
                     >
                       Random Selection
                     </button>
+                    {draftMode === "flashcard" && (
+                      <button
+                        onClick={() => setDraftFilter("information")}
+                        className={`w-full py-3 px-4 rounded-md border-2 text-left transition-colors text-sm sm:text-base ${
+                          draftFilter === "information"
+                            ? "border-blue-500 bg-blue-50 text-blue-700"
+                            : "border-gray-300 text-gray-700 hover:border-gray-400"
+                        }`}
+                      >
+                        Information Cards Only
+                      </button>
+                    )}
                     {draftFilter === "random" && (
                       <div className='ml-4 mt-2'>
                         <label className='block text-sm text-gray-600 mb-1'>
@@ -512,6 +558,18 @@ export default function Home() {
                             : "Random Set"}
                         </button>
                       )
+                    )}
+                    {draftMode === "flashcard" && (
+                      <button
+                        onClick={() => setDraftFilter("information")}
+                        className={`w-1/3 p-2 px-3 rounded-md border text-sm transition-colors ${
+                          draftFilter === "information"
+                            ? "border-blue-500 bg-blue-50 text-blue-700"
+                            : "border-gray-300 text-gray-700 hover:border-gray-400"
+                        }`}
+                      >
+                        Info Only
+                      </button>
                     )}
                   </div>
 

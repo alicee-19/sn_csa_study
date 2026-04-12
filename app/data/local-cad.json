@@ -1,0 +1,16 @@
+[
+  {
+    "id": 600028,
+    "exam": "cad",
+    "questionType": "information",
+    "questionNumber": 28,
+    "topic": 1,
+    "question": "What variable global reference to business Rule?",
+    "imageUrl": "",
+    "imageAlt": "Optional CAD question image",
+    "options": [],
+    "correctAnswer": "",
+    "suggestedAnswer": "",
+    "explanation": "current: The current record being referenced.\nprevious: The record before any changes were made, available on update and delete operations. This is not available on asynch operations.\ng_scratchpad: Scratchpad object available on display rules, used to pass information to the client to be accessed from client scripts.\nsystem (or gs): References to GlideSystem functions."
+  }
+]

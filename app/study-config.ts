@@ -20,11 +20,11 @@ export const STUDY_CONFIG: Record<ExamTrack, StudyExamConfig> = {
         label: "ExamTopics",
         modes: ["flashcard", "quiz", "exam"],
       },
-      // {
-      //   id: "kyle",
-      //   label: "Kyle's Source",
-      //   modes: ["flashcard", "quiz"],
-      // },
+      {
+        id: "local",
+        label: "Local",
+        modes: ["flashcard"],
+      },
       // {
       //   id: "all",
       //   label: "Mix All Sources",

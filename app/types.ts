@@ -32,8 +32,8 @@ export interface StudyProgress {
 }
 
 export type StudyMode = "flashcard" | "quiz" | "exam";
-export type QuestionFilter = "all" | "failed" | "random";
+export type QuestionFilter = "all" | "failed" | "random" | "information";
 export type ExamTrack = "cis-df" | "cad";
-export type QuestionType = "mcq" | "drag_drop";
-export type QuestionDataSource = "examtopics" | "kyle";
+export type QuestionType = "mcq" | "drag_drop" | "information";
+export type QuestionDataSource = "examtopics" | "local";
 export type QuestionSource = QuestionDataSource | "all";
