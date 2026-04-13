@@ -577,7 +577,7 @@ export default function Quiz({
                     current.correctAnswer.split("").sort().join("")
               ) ? (
               <div className='p-4 bg-green-50 border border-green-500 rounded-md'>
-                <p className='font-semibold text-green-800'>
+                <p className='font-semibold text-green-800 whitespace-pre-line'>
                   {current.explanation || "Correct! Great job!"}
                 </p>
               </div>
